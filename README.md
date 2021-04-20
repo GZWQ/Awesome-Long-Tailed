@@ -1,5 +1,5 @@
 # Awesome-Long-Tailed
-Papers about long-tailed tasks
+Papers related to long-tailed tasks
 
 
 
@@ -31,3 +31,11 @@ Papers about long-tailed tasks
 
 > 1. Augmentation is performed in the feature space.
 > 2. For a class to be augmentated, we can compute its mean features from current batch data and then update it in a momentum way. So we can generate virtual features by firstly randomly sampling variation from a gaussian prior and add the variation to the mean feature.
+
+
+
+## Multiple Experts
+
+[Long-tailed Recognition by Routing Diverse Distribution-Aware Experts](https://arxiv.org/pdf/2010.01809.pdf) ICLR 2021
+
+[Class-Balanced Distillation for Long-Tailed Visual Recognition](https://arxiv.org/pdf/2104.05279.pdf) preprint 
