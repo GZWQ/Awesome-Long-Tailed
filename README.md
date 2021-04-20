@@ -12,10 +12,11 @@ Using ResNet-32 as backbone.
 
 Imbalance factor = 100
 
-|                      |  Acc  |
-| :------------------: | :---: |
-| MetaSAug (CVPR 2021) | 80.66 |
-|   BLMS (CVPR 2020)   | 84.9  |
+|                         |  Acc  |
+| :---------------------: | :---: |
+|  MetaSAug (CVPR 2021)   | 80.66 |
+| LogitAdjust (ICLR 2021) | 80.92 |
+|    BLMS (CVPR 2020)     | 84.9  |
 
 
 
@@ -25,11 +26,12 @@ Using ResNet-32 as backbone.
 
 Imbalance factor = 100
 
-|                      | Many | Medium | Few  |  All  |
-| :------------------: | :--: | :----: | :--: | :---: |
-| MetaSAug (CVPR 2021) |  -   |   -    |  -   | 48.01 |
-|   RIDE (ICLR 2021)   | 69.3 |  49.3  | 26.0 | 49.1  |
-|   BLMS (CVPR 2020)   |      |        |      | 50.8  |
+|                         | Many | Medium | Few  |  All  |
+| :---------------------: | :--: | :----: | :--: | :---: |
+| LogitAdjust (ICLR 2021) |  -   |   -    |  -   | 43.89 |
+|  MetaSAug (CVPR 2021)   |  -   |   -    |  -   | 48.01 |
+|    RIDE (ICLR 2021)     | 69.3 |  49.3  | 26.0 | 49.1  |
+|    BLMS (CVPR 2020)     |      |        |      | 50.8  |
 
 
 
@@ -50,11 +52,13 @@ Using ResNet-50 as backbone.
 
 Using ResNet-50 as backbone.
 
-|                      | Many | Medium | Few  |  All  |
-| :------------------: | :--: | :----: | :--: | :---: |
-| MetaSAug (CVPR 2021) |      |        |      | 47.39 |
-|   RIDE (ICLR 2021)   |      |        |      | 55.4  |
-|      CBD (2021)      | 68.5 |  52.7  | 29.2 | 55.6  |
+|                         | Many | Medium | Few  |  All  |
+| :---------------------: | :--: | :----: | :--: | :---: |
+|  MetaSAug (CVPR 2021)   |      |        |      | 47.39 |
+| LogitAdjust (ICLR 2021) |      |        |      | 51.1  |
+|     KCL (ICLR 2021)     | 61.8 |  49.4  | 30.9 | 51.5  |
+|    RIDE (ICLR 2021)     |  -   |   -    |  -   | 55.4  |
+|       CBD (2021)        | 68.5 |  52.7  | 29.2 | 55.6  |
 
 
 
@@ -62,11 +66,13 @@ Using ResNet-50 as backbone.
 
 Using ResNet-50 as backbone.
 
-|                      | Many | Medium | Few  |  All  |
-| :------------------: | :--: | :----: | :--: | :---: |
-| MetaSAug (CVPR 2021) |  -   |   -    |  -   | 68.75 |
-|   RIDE (ICLR 2021)   | 70.9 |  72.4  | 73.1 | 72.6  |
-|      CBD (2021)      | 75.9 |  74.7  | 71.5 | 73.6  |
+|                         | Many | Medium | Few  |  All  |
+| :---------------------: | :--: | :----: | :--: | :---: |
+| LogitAdjust (ICLR 2021) |  -   |   -    |  -   | 66.36 |
+|  MetaSAug (CVPR 2021)   |  -   |   -    |  -   | 68.75 |
+|     KCL (ICLR 2021)     |  -   |   -    |  -   | 68.6  |
+|    RIDE (ICLR 2021)     | 70.9 |  72.4  | 73.1 | 72.6  |
+|       CBD (2021)        | 75.9 |  74.7  | 71.5 | 73.6  |
 
 
 
@@ -76,13 +82,11 @@ Papers related to long-tailed tasks
 
 
 
-
-
-
-
 ## Re-weighting
 
+(KCL) [Exploring Balanced Feature Spaces for Representation Learning](https://openreview.net/pdf?id=OqtLIabPTit) (ICLR 2021)
 
+(LogitAdjust) [Long-tail learning via logit adjustment](https://arxiv.org/pdf/2007.07314v1.pdf) (ICLR 2021)
 
 ## Sampling
 
@@ -103,8 +107,6 @@ Papers related to long-tailed tasks
 
 
 ## Data Augmentation
-
-
 
 
 
