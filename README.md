@@ -1,5 +1,76 @@
+
+
+
+
+# Bechmark
+
+
+
+## CIFAR10_LT
+
+
+
+## CIFAR100_LT
+
+Using ResNet-32 as backbone.
+
+|      |      |        |      |      |
+| :--: | :--: | :----: | :--: | :--: |
+|      | Many | Medium | Few  | All  |
+|      |      |        |      |      |
+|      |      |        |      |      |
+|      |      |        |      |      |
+
+
+
+## Places365_LT
+
+Using ResNet-50 as backbone.
+
+|      |      |        |      |      |
+| :--: | :--: | :----: | :--: | :--: |
+|      | Many | Medium | Few  | All  |
+|      |      |        |      |      |
+|      |      |        |      |      |
+|      |      |        |      |      |
+
+
+
+## ImageNet_LT
+
+Using ResNet-50 as backbone.
+
+|            |      |        |      |      |
+| :--------: | :--: | :----: | :--: | :--: |
+|            | Many | Medium | Few  | All  |
+|            |      |        |      |      |
+|            |      |        |      |      |
+| CBD (2021) | 68.5 |  52.7  | 29.2 | 55.6 |
+
+
+
+## iNaturalist18
+
+Using ResNet-50 as backbone.
+
+|            |      |        |      |      |
+| :--------: | :--: | :----: | :--: | :--: |
+|            | Many | Medium | Few  | All  |
+|            |      |        |      |      |
+|            |      |        |      |      |
+| CBD (2021) | 75.9 |  74.7  | 71.5 | 73.6 |
+
+
+
+
+
 # Awesome-Long-Tailed
+
 Papers related to long-tailed tasks
+
+
+
+
 
 
 
@@ -38,4 +109,4 @@ Papers related to long-tailed tasks
 
 [Long-tailed Recognition by Routing Diverse Distribution-Aware Experts](https://arxiv.org/pdf/2010.01809.pdf) ICLR 2021
 
-[Class-Balanced Distillation for Long-Tailed Visual Recognition](https://arxiv.org/pdf/2104.05279.pdf) preprint 
+(CBD) [Class-Balanced Distillation for Long-Tailed Visual Recognition](https://arxiv.org/pdf/2104.05279.pdf) preprint 
