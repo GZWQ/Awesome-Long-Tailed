@@ -8,18 +8,28 @@
 
 ## CIFAR10_LT
 
+Using ResNet-32 as backbone.
+
+Imbalance factor = 100
+
+|                      |  Acc  |
+| :------------------: | :---: |
+| MetaSAug (CVPR 2021) | 80.66 |
+|   BLMS (CVPR 2020)   | 84.9  |
+
 
 
 ## CIFAR100_LT
 
 Using ResNet-32 as backbone.
 
-|      |      |        |      |      |
-| :--: | :--: | :----: | :--: | :--: |
-|      | Many | Medium | Few  | All  |
-|      |      |        |      |      |
-|      |      |        |      |      |
-|      |      |        |      |      |
+Imbalance factor = 100
+
+|                      | Many | Medium | Few  |  All  |
+| :------------------: | :--: | :----: | :--: | :---: |
+| MetaSAug (CVPR 2021) |  -   |   -    |  -   | 48.01 |
+|   RIDE (ICLR 2021)   | 69.3 |  49.3  | 26.0 | 49.1  |
+|   BLMS (CVPR 2020)   |      |        |      | 50.8  |
 
 
 
@@ -40,12 +50,11 @@ Using ResNet-50 as backbone.
 
 Using ResNet-50 as backbone.
 
-|            |      |        |      |      |
-| :--------: | :--: | :----: | :--: | :--: |
-|            | Many | Medium | Few  | All  |
-|            |      |        |      |      |
-|            |      |        |      |      |
-| CBD (2021) | 68.5 |  52.7  | 29.2 | 55.6 |
+|                      | Many | Medium | Few  |  All  |
+| :------------------: | :--: | :----: | :--: | :---: |
+| MetaSAug (CVPR 2021) |      |        |      | 47.39 |
+|   RIDE (ICLR 2021)   |      |        |      | 55.4  |
+|      CBD (2021)      | 68.5 |  52.7  | 29.2 | 55.6  |
 
 
 
@@ -53,14 +62,11 @@ Using ResNet-50 as backbone.
 
 Using ResNet-50 as backbone.
 
-|            |      |        |      |      |
-| :--------: | :--: | :----: | :--: | :--: |
-|            | Many | Medium | Few  | All  |
-|            |      |        |      |      |
-|            |      |        |      |      |
-| CBD (2021) | 75.9 |  74.7  | 71.5 | 73.6 |
-
-
+|                      | Many | Medium | Few  |  All  |
+| :------------------: | :--: | :----: | :--: | :---: |
+| MetaSAug (CVPR 2021) |  -   |   -    |  -   | 68.75 |
+|   RIDE (ICLR 2021)   | 70.9 |  72.4  | 73.1 | 72.6  |
+|      CBD (2021)      | 75.9 |  74.7  | 71.5 | 73.6  |
 
 
 
@@ -82,7 +88,23 @@ Papers related to long-tailed tasks
 
 
 
+## Meta Learning
+
+(MetaSAug) [MetaSAug: Meta Semantic Augmentation for Long-Tailed Visual Recognition](https://arxiv.org/pdf/2103.12579.pdf) CVPR 2021
+
+(BLMS) [Balanced Meta-Softmax for Long-Tailed Visual Recognition](https://papers.nips.cc/paper/2020/file/2ba61cc3a8f44143e1f2f13b2b729ab3-Paper.pdf) NIPS 2020
+
+[Rethinking Class-Balanced Methods for Long-Tailed Visual Recognition from a Domain Adaptation Perspective](https://arxiv.org/pdf/2003.10780.pdf) CVPR 2020
+
+[Meta-Weight-Net: Learning an Explicit Mapping For Sample Weighting](https://arxiv.org/pdf/1902.07379.pdf) NIPS 2019
+
+
+
+
+
 ## Data Augmentation
+
+
 
 
 
@@ -107,6 +129,6 @@ Papers related to long-tailed tasks
 
 ## Multiple Experts
 
-[Long-tailed Recognition by Routing Diverse Distribution-Aware Experts](https://arxiv.org/pdf/2010.01809.pdf) ICLR 2021
+(RIDE) [Long-tailed Recognition by Routing Diverse Distribution-Aware Experts](https://arxiv.org/pdf/2010.01809.pdf) ICLR 2021
 
 (CBD) [Class-Balanced Distillation for Long-Tailed Visual Recognition](https://arxiv.org/pdf/2104.05279.pdf) preprint 
