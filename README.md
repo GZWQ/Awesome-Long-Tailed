@@ -14,8 +14,10 @@ Imbalance factor = 100
 
 |                         |  Acc  |
 | :---------------------: | :---: |
+|     BBN (CVPR 2020)     | 79.82 |
 |  MetaSAug (CVPR 2021)   | 80.66 |
 | LogitAdjust (ICLR 2021) | 80.92 |
+|   MiSLAS (CVPR 2021)    | 82.1  |
 |    BLMS (CVPR 2020)     | 84.9  |
 
 
@@ -28,7 +30,9 @@ Imbalance factor = 100
 
 |                         | Many | Medium | Few  |  All  |
 | :---------------------: | :--: | :----: | :--: | :---: |
+|       BBN (CVPR)        |      |        |      | 42.56 |
 | LogitAdjust (ICLR 2021) |  -   |   -    |  -   | 43.89 |
+|   MiSLAS (CVPR 2021)    |      |        |      | 47.0  |
 |  MetaSAug (CVPR 2021)   |  -   |   -    |  -   | 48.01 |
 |    RIDE (ICLR 2021)     | 69.3 |  49.3  | 26.0 | 49.1  |
 |    BLMS (CVPR 2020)     |      |        |      | 50.8  |
@@ -37,14 +41,13 @@ Imbalance factor = 100
 
 ## Places365_LT
 
-Using ResNet-50 as backbone.
+Using ResNet-152 as backbone.
 
-|      |      |        |      |      |
-| :--: | :--: | :----: | :--: | :--: |
-|      | Many | Medium | Few  | All  |
-|      |      |        |      |      |
-|      |      |        |      |      |
-|      |      |        |      |      |
+|                    | Many | Medium | Few  | All  |
+| :----------------: | :--: | :----: | :--: | :--: |
+| MiSLAS (CVPR 2021) |      |        |      | 40.4 |
+|                    |      |        |      |      |
+|                    |      |        |      |      |
 
 
 
@@ -57,6 +60,7 @@ Using ResNet-50 as backbone.
 |  MetaSAug (CVPR 2021)   |      |        |      | 47.39 |
 | LogitAdjust (ICLR 2021) |      |        |      | 51.1  |
 |     KCL (ICLR 2021)     | 61.8 |  49.4  | 30.9 | 51.5  |
+|   MiSLAS (CVPR 2021)    |      |        |      | 52.7  |
 |    RIDE (ICLR 2021)     |  -   |   -    |  -   | 55.4  |
 |       CBD (2021)        | 68.5 |  52.7  | 29.2 | 55.6  |
 
@@ -71,6 +75,8 @@ Using ResNet-50 as backbone.
 | LogitAdjust (ICLR 2021) |  -   |   -    |  -   | 66.36 |
 |  MetaSAug (CVPR 2021)   |  -   |   -    |  -   | 68.75 |
 |     KCL (ICLR 2021)     |  -   |   -    |  -   | 68.6  |
+|     BBN (CVPR 2020)     |  -   |   -    |  -   | 69.62 |
+|   MiSLAS (CVPR 2021)    |      |        |      | 71.6  |
 |    RIDE (ICLR 2021)     | 70.9 |  72.4  | 73.1 | 72.6  |
 |       CBD (2021)        | 75.9 |  74.7  | 71.5 | 73.6  |
 
@@ -83,8 +89,6 @@ Papers related to long-tailed tasks
 
 
 ## Re-weighting
-
-(KCL) [Exploring Balanced Feature Spaces for Representation Learning](https://openreview.net/pdf?id=OqtLIabPTit) (ICLR 2021)
 
 (LogitAdjust) [Long-tail learning via logit adjustment](https://arxiv.org/pdf/2007.07314v1.pdf) (ICLR 2021)
 
@@ -106,9 +110,11 @@ Papers related to long-tailed tasks
 
 
 
-## Data Augmentation
+## Feature Manipulation
 
+(MiSLAS) [Improving Calibration for Long-Tailed Recognition](https://arxiv.org/pdf/2104.00466.pdf) (CVPR 2021) [Code](https://github.com/Jia-Research-Lab/MiSLAS) 
 
+(KCL) [Exploring Balanced Feature Spaces for Representation Learning](https://openreview.net/pdf?id=OqtLIabPTit) (ICLR 2021)
 
 [Feature Space Augmentation for Long-Tailed Data](https://arxiv.org/pdf/2008.03673.pdf) ECCV 2020
 
@@ -132,5 +138,7 @@ Papers related to long-tailed tasks
 ## Multiple Experts
 
 (RIDE) [Long-tailed Recognition by Routing Diverse Distribution-Aware Experts](https://arxiv.org/pdf/2010.01809.pdf) ICLR 2021
+
+(BBN) [Bilateral-Branch Network with Cumulative Learning for Long-Tailed Visual Recognition](https://arxiv.org/pdf/1912.02413.pdf) CVPR 2020
 
 (CBD) [Class-Balanced Distillation for Long-Tailed Visual Recognition](https://arxiv.org/pdf/2104.05279.pdf) preprint 
