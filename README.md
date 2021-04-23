@@ -63,6 +63,7 @@ Using ResNet-50 as backbone.
 |   MiSLAS (CVPR 2021)    |      |        |      | 52.7  |
 |    RIDE (ICLR 2021)     |  -   |   -    |  -   | 55.4  |
 |       CBD (2021)        | 68.5 |  52.7  | 29.2 | 55.6  |
+|       MoE (2021)        | 66.7 |  54.1  | 37.6 | 56.7  |
 
 
 
@@ -79,6 +80,7 @@ Using ResNet-50 as backbone.
 |   MiSLAS (CVPR 2021)    |      |        |      | 71.6  |
 |    RIDE (ICLR 2021)     | 70.9 |  72.4  | 73.1 | 72.6  |
 |       CBD (2021)        | 75.9 |  74.7  | 71.5 | 73.6  |
+|       MoE (2021)        | 72.8 |  74.8  | 74.6 | 74.5  |
 
 
 
@@ -90,6 +92,8 @@ Papers related to long-tailed tasks
 
 ## Re-weighting
 
+[Disentangling Label Distribution for Long-tailed Visual Recognition](https://arxiv.org/pdf/2012.00321.pdf) (CVPR 2021) [Code](https://github.com/hyperconnect/LADE) 
+
 (LogitAdjust) [Long-tail learning via logit adjustment](https://arxiv.org/pdf/2007.07314v1.pdf) (ICLR 2021)
 
 ## Sampling
@@ -98,13 +102,13 @@ Papers related to long-tailed tasks
 
 ## Meta Learning
 
-(MetaSAug) [MetaSAug: Meta Semantic Augmentation for Long-Tailed Visual Recognition](https://arxiv.org/pdf/2103.12579.pdf) CVPR 2021
+(MetaSAug) [MetaSAug: Meta Semantic Augmentation for Long-Tailed Visual Recognition](https://arxiv.org/pdf/2103.12579.pdf) (CVPR 2021) [code](https://github.com/BIT-DA/MetaSAug) 
 
-(BLMS) [Balanced Meta-Softmax for Long-Tailed Visual Recognition](https://papers.nips.cc/paper/2020/file/2ba61cc3a8f44143e1f2f13b2b729ab3-Paper.pdf) NIPS 2020
+(BLMS) [Balanced Meta-Softmax for Long-Tailed Visual Recognition](https://papers.nips.cc/paper/2020/file/2ba61cc3a8f44143e1f2f13b2b729ab3-Paper.pdf) (NIPS 2020) [code](https://github.com/jiawei-ren/BalancedMetaSoftmax-Classification) 
 
-[Rethinking Class-Balanced Methods for Long-Tailed Visual Recognition from a Domain Adaptation Perspective](https://arxiv.org/pdf/2003.10780.pdf) CVPR 2020
+[Rethinking Class-Balanced Methods for Long-Tailed Visual Recognition from a Domain Adaptation Perspective](https://arxiv.org/pdf/2003.10780.pdf) (CVPR 2020) [code](https://github.com/abdullahjamal/Longtail_DA) 
 
-[Meta-Weight-Net: Learning an Explicit Mapping For Sample Weighting](https://arxiv.org/pdf/1902.07379.pdf) NIPS 2019
+[Meta-Weight-Net: Learning an Explicit Mapping For Sample Weighting](https://arxiv.org/pdf/1902.07379.pdf) (NIPS 2019) [code](https://github.com/xjtushujun/Meta-weight-net_class-imbalance) 
 
 
 
@@ -114,11 +118,13 @@ Papers related to long-tailed tasks
 
 (MiSLAS) [Improving Calibration for Long-Tailed Recognition](https://arxiv.org/pdf/2104.00466.pdf) (CVPR 2021) [Code](https://github.com/Jia-Research-Lab/MiSLAS) 
 
-(KCL) [Exploring Balanced Feature Spaces for Representation Learning](https://openreview.net/pdf?id=OqtLIabPTit) (ICLR 2021)
+(KCL) [Exploring Balanced Feature Spaces for Representation Learning](https://openreview.net/pdf?id=OqtLIabPTit) (ICLR 2021) [waiting code]() 
 
 [Feature Space Augmentation for Long-Tailed Data](https://arxiv.org/pdf/2008.03673.pdf) ECCV 2020
 
 [M2m: Imbalanced Classification via Major-to-minor Translation](https://arxiv.org/pdf/2004.00431.pdf) CVPR 2020
+
+(BBN) [Bilateral-Branch Network with Cumulative Learning for Long-Tailed Visual Recognition](https://arxiv.org/pdf/1912.02413.pdf) (CVPR 2020) [Code](https://github.com/Megvii-Nanjing/BBN) 
 
 [Deep Representation Learning on Long-tailed Data: A Learnable Embedding Augmentation Perspective](https://arxiv.org/pdf/2002.10826.pdf) CVPR 2020
 
@@ -126,9 +132,7 @@ Papers related to long-tailed tasks
 
 [Memory-based Jitter: Improving Visual Recognition on Long-tailed Data with Diversity In Memory](https://arxiv.org/pdf/2008.09809.pdf) preprint
 
-[FASA: Feature Augmentation and Sampling Adaptation for Long-Tailed Instance Segmentation](https://arxiv.org/pdf/2102.12867.pdf)
-
- preprint
+[FASA: Feature Augmentation and Sampling Adaptation for Long-Tailed Instance Segmentation](https://arxiv.org/pdf/2102.12867.pdf)  preprint [waiting code]() 
 
 > 1. Augmentation is performed in the feature space.
 > 2. For a class to be augmentated, we can compute its mean features from current batch data and then update it in a momentum way. So we can generate virtual features by firstly randomly sampling variation from a gaussian prior and add the variation to the mean feature.
@@ -137,8 +141,8 @@ Papers related to long-tailed tasks
 
 ## Multiple Experts
 
-(RIDE) [Long-tailed Recognition by Routing Diverse Distribution-Aware Experts](https://arxiv.org/pdf/2010.01809.pdf) ICLR 2021
+(RIDE) [Long-tailed Recognition by Routing Diverse Distribution-Aware Experts](https://arxiv.org/pdf/2010.01809.pdf) ICLR 2021[code](https://github.com/frank-xwang/RIDE-LongTailRecognition) 
 
-(BBN) [Bilateral-Branch Network with Cumulative Learning for Long-Tailed Visual Recognition](https://arxiv.org/pdf/1912.02413.pdf) CVPR 2020
+(CBD) [Class-Balanced Distillation for Long-Tailed Visual Recognition](https://arxiv.org/pdf/2104.05279.pdf) (preprint) 
 
-(CBD) [Class-Balanced Distillation for Long-Tailed Visual Recognition](https://arxiv.org/pdf/2104.05279.pdf) preprint 
+(MoE) [Improving Long-Tailed Classification from Instance Level](https://arxiv.org/pdf/2104.06094.pdf) (preprint) [waiting code]() 
