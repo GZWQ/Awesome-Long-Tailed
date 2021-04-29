@@ -96,6 +96,12 @@ Papers related to long-tailed tasks
 
 ## Re-weighting
 
+[Equalization Loss v2: A New Gradient Balance Approach for Long-tailed Object Detection](https://arxiv.org/pdf/2012.08548.pdf) (CVPR 2021) [Code](https://github.com/tztztztztz/eqlv2) 
+
+>  Gradient-guided re-weighting
+
+[Adaptive Class Suppression Loss for Long-Tail Object Detection](https://arxiv.org/pdf/2104.00885.pdf) (CVPR 2021) [Code](https://github.com/CASIA-IVA-Lab/ACSL) 
+
 (LADE) [Disentangling Label Distribution for Long-tailed Visual Recognition](https://arxiv.org/pdf/2012.00321.pdf) (CVPR 2021) [Code](https://github.com/hyperconnect/LADE) 
 
 (LogitAdjust) [Long-tail learning via logit adjustment](https://arxiv.org/pdf/2007.07314v1.pdf) (ICLR 2021)
