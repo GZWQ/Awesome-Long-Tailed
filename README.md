@@ -104,6 +104,8 @@ Papers related to long-tailed tasks
 
 (LADE) [Disentangling Label Distribution for Long-tailed Visual Recognition](https://arxiv.org/pdf/2012.00321.pdf) (CVPR 2021) [Code](https://github.com/hyperconnect/LADE) 
 
+> An extension of BalancedSoftmax, but improvement is quite limited.
+
 (LogitAdjust) [Long-tail learning via logit adjustment](https://arxiv.org/pdf/2007.07314v1.pdf) (ICLR 2021)
 
 (BLMS) [Balanced Meta-Softmax for Long-Tailed Visual Recognition](https://papers.nips.cc/paper/2020/file/2ba61cc3a8f44143e1f2f13b2b729ab3-Paper.pdf) (NIPS 2020) [code](https://github.com/jiawei-ren/BalancedMetaSoftmax-Classification) 
@@ -134,6 +136,8 @@ Papers related to long-tailed tasks
 
 (KCL) [Exploring Balanced Feature Spaces for Representation Learning](https://openreview.net/pdf?id=OqtLIabPTit) (ICLR 2021) [waiting code](https://paperswithcode.com/paper/exploring-balanced-feature-spaces-for)  
 
+(SSP) [Rethinking the Value of Labels for Improving Class-Imbalanced Learning](https://arxiv.org/pdf/2006.07529.pdf) (NIPS 2020) [Code](https://github.com/YyzHarry/imbalanced-semi-self) 
+
 [Feature Space Augmentation for Long-Tailed Data](https://arxiv.org/pdf/2008.03673.pdf) ECCV 2020
 
 [Learning From Multiple Experts: Self-paced Knowledge Distillation for Long-tailed Classification](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123500239.pdf) ECCV 2020 [Code](https://github.com/xiangly55/LFME) 
@@ -160,6 +164,8 @@ Papers related to long-tailed tasks
 [Distribution Alignment: A Unified Framework for Long-tail Visual Recognition](https://arxiv.org/pdf/2103.16370.pdf) (CVPR 2021) [Code](https://github.com/Megvii-BaseDetection/DisAlign) 
 
 [Distilling Virtual Examples for Long-tailed Recognition](https://arxiv.org/pdf/2103.15042.pdf) (CVPR 2021)
+
+> Disentangle the prediction from teach model into multiple "virtual examples", i.e., many "one-hot gt".
 
 
 
