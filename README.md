@@ -15,6 +15,7 @@ Imbalance factor = 100
 |                         |  Acc  |
 | :---------------------: | :---: |
 |     BBN (CVPR 2020)     | 79.82 |
+|     RSG (CVPR 2021)     | 79.95 |
 |  MetaSAug (CVPR 2021)   | 80.66 |
 | LogitAdjust (ICLR 2021) | 80.92 |
 |   RIDE (ICLR 2021) *    | 81.54 |
@@ -33,6 +34,7 @@ Imbalance factor = 100
 | :---------------------: | :--: | :----: | :--: | :---: |
 |       BBN (CVPR)        |      |        |      | 42.56 |
 | LogitAdjust (ICLR 2021) |  -   |   -    |  -   | 43.89 |
+|     RSG (CVPR 2021)     |  -   |   -    |  -   | 44.55 |
 |    LADE (CVPR 2021)     |      |        |      | 45.4  |
 |   MiSLAS (CVPR 2021)    |      |        |      | 47.0  |
 |  MetaSAug (CVPR 2021)   |  -   |   -    |  -   | 48.01 |
@@ -48,6 +50,7 @@ Using ResNet-152 as backbone.
 |                    | Many | Medium | Few  | All  |
 | :----------------: | :--: | :----: | :--: | :--: |
 |  LADE (CVPR 2021)  | 42.8 |  39.1  | 29.6 | 38.8 |
+|  RSG (CVPR 2021)   | 41.9 |  41.4  | 32.0 | 39.3 |
 | MiSLAS (CVPR 2021) |      |        |      | 40.4 |
 |                    |      |        |      |      |
 |                    |      |        |      |      |
@@ -81,6 +84,7 @@ Using ResNet-50 as backbone.
 |     KCL (ICLR 2021)     |  -   |   -    |  -   | 68.6  |
 |     BBN (CVPR 2020)     |  -   |   -    |  -   | 69.62 |
 |    LADE (CVPR 2021)     |  -   |   -    |  -   | 70.0  |
+|     RSG (CVPR 2021)     |  -   |   -    |  -   | 70.26 |
 |   MiSLAS (CVPR 2021)    |  -   |   -    |  -   | 71.6  |
 |    RIDE (ICLR 2021)     | 70.9 |  72.4  | 73.1 | 72.6  |
 |       CBD (2021)        | 75.9 |  74.7  | 71.5 | 73.6  |
@@ -130,6 +134,10 @@ Papers related to long-tailed tasks
 
 ## Feature Manipulation
 
+(RSG) [RSG: A Simple but Effective Module for Learning Imbalanced Datasets](https://openaccess.thecvf.com/content/CVPR2021/papers/Wang_RSG_A_Simple_but_Effective_Module_for_Learning_Imbalanced_Datasets_CVPR_2021_paper.pdf) (CVPR 2021) [Code](https://github.com/Jianf-Wang/RSG) 
+
+> RSG(Rare-class Sample Generator) aims to generate some new samples for rare classes during training.
+
 [Contrastive Learning based Hybrid Networks for Long-Tailed Image Classification](https://arxiv.org/pdf/2103.14267.pdf) (CVPR 2021) [Waiting code](https://paperswithcode.com/paper/contrastive-learning-based-hybrid-networks) 
 
 (MiSLAS) [Improving Calibration for Long-Tailed Recognition](https://arxiv.org/pdf/2104.00466.pdf) (CVPR 2021) [Code](https://github.com/Jia-Research-Lab/MiSLAS) 
@@ -161,6 +169,8 @@ Papers related to long-tailed tasks
 
 ### Logit Adjustment
 
+[t-vMF Similarity for Regularizing Intra-Class Feature Distribution](https://staff.aist.go.jp/takumi.kobayashi/publication/2021/CVPR2021.pdf) (CVPR2021) [Code](https://github.com/tk1980/tvMF) 
+
 [Distribution Alignment: A Unified Framework for Long-tail Visual Recognition](https://arxiv.org/pdf/2103.16370.pdf) (CVPR 2021) [Code](https://github.com/Megvii-BaseDetection/DisAlign) 
 
 [Distilling Virtual Examples for Long-tailed Recognition](https://arxiv.org/pdf/2103.15042.pdf) (CVPR 2021)
@@ -173,7 +183,7 @@ Papers related to long-tailed tasks
 
 (RIDE) [Long-tailed Recognition by Routing Diverse Distribution-Aware Experts](https://arxiv.org/pdf/2010.01809.pdf) ICLR 2021 [code](https://github.com/frank-xwang/RIDE-LongTailRecognition) 
 
-(CBD) [Class-Balanced Distillation for Long-Tailed Visual Recognition](https://arxiv.org/pdf/2104.05279.pdf) (preprint) 
+(CBD) [Class-Balanced Distillation for Long-Tailed Visual Recognition](https://arxiv.org/pdf/2104.05279.pdf) (preprint) [waiting code](https://paperswithcode.com/paper/class-balanced-distillation-for-long-tailed) 
 
 (MoE) [Improving Long-Tailed Classification from Instance Level](https://arxiv.org/pdf/2104.06094.pdf) (preprint) [waiting code](https://paperswithcode.com/paper/improving-long-tailed-classification-from) 
 
