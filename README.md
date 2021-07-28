@@ -39,6 +39,7 @@ Imbalance factor = 100
 |   MiSLAS (CVPR 2021)    |      |        |      | 47.0  |
 |  MetaSAug (CVPR 2021)   |  -   |   -    |  -   | 48.01 |
 |    RIDE (ICLR 2021)     | 69.3 |  49.3  | 26.0 | 49.1  |
+|       TADE (2021)       |      |        |      | 49.8  |
 |    BLMS (CVPR 2020)     |      |        |      | 50.8  |
 
 
@@ -52,7 +53,7 @@ Using ResNet-152 as backbone.
 |  LADE (CVPR 2021)  | 42.8 |  39.1  | 29.6 | 38.8 |
 |  RSG (CVPR 2021)   | 41.9 |  41.4  | 32.0 | 39.3 |
 | MiSLAS (CVPR 2021) |      |        |      | 40.4 |
-|                    |      |        |      |      |
+|    TADE (2021)     |      |        |      | 40.9 |
 |                    |      |        |      |      |
 
 
@@ -70,6 +71,7 @@ Using ResNet-50 as backbone.
 |    RIDE (ICLR 2021)     |  -   |   -    |  -   | 55.4  |
 |       CBD (2021)        | 68.5 |  52.7  | 29.2 | 55.6  |
 |       MoE (2021)        | 66.7 |  54.1  | 37.6 | 56.7  |
+|       TADE (2021)       | 66.5 |  57.0  | 43.4 | 58.8  |
 
 
 
@@ -87,6 +89,7 @@ Using ResNet-50 as backbone.
 |     RSG (CVPR 2021)     |  -   |   -    |  -   | 70.26 |
 |   MiSLAS (CVPR 2021)    |  -   |   -    |  -   | 71.6  |
 |    RIDE (ICLR 2021)     | 70.9 |  72.4  | 73.1 | 72.6  |
+|       TADE (2021)       |  -   |   -    |  -   | 72.9  |
 |       CBD (2021)        | 75.9 |  74.7  | 71.5 | 73.6  |
 |       MoE (2021)        | 72.8 |  74.8  | 74.6 | 74.5  |
 
@@ -188,3 +191,7 @@ Papers related to long-tailed tasks
 (MoE) [Improving Long-Tailed Classification from Instance Level](https://arxiv.org/pdf/2104.06094.pdf) (preprint) [waiting code](https://paperswithcode.com/paper/improving-long-tailed-classification-from) 
 
 > Instance level re-weighting.
+
+(TADE) [Test-Agnostic Long-Tailed Recognition by Test-Time Aggregating Diverse Experts with Self-Supervision](https://arxiv.org/pdf/2107.09249.pdf) (preprint) [Code](https://github.com/Vanint/TADE-AgnosticLT) 
+
+> Based on RIDE.
