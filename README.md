@@ -184,7 +184,9 @@ Papers related to long-tailed tasks
 
 ## Multiple Experts
 
-(RIDE) [Long-tailed Recognition by Routing Diverse Distribution-Aware Experts](https://arxiv.org/pdf/2010.01809.pdf) ICLR 2021 [code](https://github.com/frank-xwang/RIDE-LongTailRecognition) 
+(RIDE) [Long-tailed Recognition by Routing Diverse Distribution-Aware Experts](https://arxiv.org/pdf/2010.01809.pdf) ICLR 2021 [Code](https://github.com/frank-xwang/RIDE-LongTailRecognition) 
+
+[Long-Tailed Recognition Using Class-Balanced Experts](https://arxiv.org/pdf/2004.03706.pdf) (DAGM-GCPR 2020) [Code](https://github.com/ssfootball04/class-balanced-experts) 
 
 (CBD) [Class-Balanced Distillation for Long-Tailed Visual Recognition](https://arxiv.org/pdf/2104.05279.pdf) (preprint) [waiting code](https://paperswithcode.com/paper/class-balanced-distillation-for-long-tailed) 
 
