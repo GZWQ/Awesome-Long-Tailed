@@ -18,6 +18,7 @@ Imbalance factor = 100
 |     RSG (CVPR 2021)     | 79.95 |
 |  MetaSAug (CVPR 2021)   | 80.66 |
 | LogitAdjust (ICLR 2021) | 80.92 |
+|     ACE (ICCV 2021)     | 81.4  |
 |   RIDE (ICLR 2021) *    | 81.54 |
 |   MiSLAS (CVPR 2021)    | 82.1  |
 |    BLMS (CVPR 2020)     | 84.9  |
@@ -39,8 +40,10 @@ Imbalance factor = 100
 |   MiSLAS (CVPR 2021)    |      |        |      | 47.0  |
 |  MetaSAug (CVPR 2021)   |  -   |   -    |  -   | 48.01 |
 |    RIDE (ICLR 2021)     | 69.3 |  49.3  | 26.0 | 49.1  |
+|     ACE (ICCV 2021)     | 66.3 |  52.8  | 27.2 | 49.6  |
 |       TADE (2021)       |      |        |      | 49.8  |
 |    BLMS (CVPR 2020)     |      |        |      | 50.8  |
+|    PaCo (ICCV 2021)     |  -   |   -    |  -   | 52.0  |
 
 
 
@@ -54,7 +57,7 @@ Using ResNet-152 as backbone.
 |  RSG (CVPR 2021)   | 41.9 |  41.4  | 32.0 | 39.3 |
 | MiSLAS (CVPR 2021) |      |        |      | 40.4 |
 |    TADE (2021)     |      |        |      | 40.9 |
-|                    |      |        |      |      |
+|  PaCo (ICCV 2021)  | 36.1 |  47.9  | 35.3 | 41.2 |
 
 
 
@@ -68,9 +71,11 @@ Using ResNet-50 as backbone.
 | LogitAdjust (ICLR 2021) |      |        |      | 51.1  |
 |     KCL (ICLR 2021)     | 61.8 |  49.4  | 30.9 | 51.5  |
 |   MiSLAS (CVPR 2021)    |  -   |   -    |  -   | 52.7  |
+|     ACE (ICCV 2021)     |  -   |   -    |  -   | 54.7  |
 |    RIDE (ICLR 2021)     |  -   |   -    |  -   | 55.4  |
 |       CBD (2021)        | 68.5 |  52.7  | 29.2 | 55.6  |
 |       MoE (2021)        | 66.7 |  54.1  | 37.6 | 56.7  |
+|    PaCo (ICCV 2021)     |  -   |   -    |  -   | 57.0  |
 |       TADE (2021)       | 66.5 |  57.0  | 43.4 | 58.8  |
 
 
@@ -89,7 +94,9 @@ Using ResNet-50 as backbone.
 |     RSG (CVPR 2021)     |  -   |   -    |  -   | 70.26 |
 |   MiSLAS (CVPR 2021)    |  -   |   -    |  -   | 71.6  |
 |    RIDE (ICLR 2021)     | 70.9 |  72.4  | 73.1 | 72.6  |
+|     ACE (ICCV 2021)     |      |        |      | 72.9  |
 |       TADE (2021)       |  -   |   -    |  -   | 72.9  |
+|    PaCo (ICCV 2021)     |  -   |   -    |  -   | 73.2  |
 |       CBD (2021)        | 75.9 |  74.7  | 71.5 | 73.6  |
 |       MoE (2021)        | 72.8 |  74.8  | 74.6 | 74.5  |
 
@@ -136,6 +143,8 @@ Papers related to long-tailed tasks
 
 
 ## Feature Manipulation
+
+(PaCo) [Parametric Contrastive Learning](https://arxiv.org/pdf/2107.12028.pdf)  (ICCV 2021) [Code](https://github.com/dvlab-research/Parametric-Contrastive-Learning)
 
 (RSG) [RSG: A Simple but Effective Module for Learning Imbalanced Datasets](https://openaccess.thecvf.com/content/CVPR2021/papers/Wang_RSG_A_Simple_but_Effective_Module_for_Learning_Imbalanced_Datasets_CVPR_2021_paper.pdf) (CVPR 2021) [Code](https://github.com/Jianf-Wang/RSG) 
 
@@ -184,7 +193,9 @@ Papers related to long-tailed tasks
 
 ## Multiple Experts
 
-(RIDE) [Long-tailed Recognition by Routing Diverse Distribution-Aware Experts](https://arxiv.org/pdf/2010.01809.pdf) ICLR 2021 [Code](https://github.com/frank-xwang/RIDE-LongTailRecognition) 
+(ACE) [ACE: Ally Complementary Experts for Solving Long-Tailed Recognition in One-Shot](https://arxiv.org/pdf/2108.02385.pdf) (ICCV 2021) [Code](https://github.com/jrcai/ACE) 
+
+(RIDE) [Long-tailed Recognition by Routing Diverse Distribution-Aware Experts](https://arxiv.org/pdf/2010.01809.pdf) (ICLR 2021) [Code](https://github.com/frank-xwang/RIDE-LongTailRecognition) 
 
 [Long-Tailed Recognition Using Class-Balanced Experts](https://arxiv.org/pdf/2004.03706.pdf) (DAGM-GCPR 2020) [Code](https://github.com/ssfootball04/class-balanced-experts) 
 
