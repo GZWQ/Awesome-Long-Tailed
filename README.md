@@ -37,6 +37,7 @@ Imbalance factor = 100
 | LogitAdjust (ICLR 2021) |  -   |   -    |  -   | 43.89 |
 |     RSG (CVPR 2021)     |  -   |   -    |  -   | 44.55 |
 |    LADE (CVPR 2021)     |      |        |      | 45.4  |
+|     SSD (ICCV 2021)     |      |        |      | 46.0  |
 |   MiSLAS (CVPR 2021)    |      |        |      | 47.0  |
 |  MetaSAug (CVPR 2021)   |  -   |   -    |  -   | 48.01 |
 |    RIDE (ICLR 2021)     | 69.3 |  49.3  | 26.0 | 49.1  |
@@ -77,6 +78,7 @@ Using ResNet-50 as backbone.
 |     ACE (ICCV 2021)     |  -   |   -    |  -   | 54.7  |
 |    RIDE (ICLR 2021)     |  -   |   -    |  -   | 55.4  |
 |       CBD (2021)        | 68.5 |  52.7  | 29.2 | 55.6  |
+|     SSD (ICCV 2021)     | 66.8 |  53.1  | 35.4 | 56.0  |
 |       MoE (2021)        | 66.7 |  54.1  | 37.6 | 56.7  |
 |    PaCo (ICCV 2021)     |  -   |   -    |  -   | 57.0  |
 |       TADE (2021)       | 66.5 |  57.0  | 43.4 | 58.8  |
@@ -96,6 +98,7 @@ Using ResNet-50 as backbone.
 |    LADE (CVPR 2021)     |  -   |   -    |  -   | 70.0  |
 |     RSG (CVPR 2021)     |  -   |   -    |  -   | 70.26 |
 |   GistNet (ICCV 2021)   |      |        |      | 70.8  |
+|     SSD (ICCV 2021)     |      |        |      | 71.5  |
 |   MiSLAS (CVPR 2021)    |  -   |   -    |  -   | 71.6  |
 |    RIDE (ICLR 2021)     | 70.9 |  72.4  | 73.1 | 72.6  |
 |     ACE (ICCV 2021)     |      |        |      | 72.9  |
@@ -150,6 +153,12 @@ Papers related to long-tailed tasks
 
 ## Feature Manipulation
 
+(SSD) [Self Supervision to Distillation for Long-Tailed Visual Recognition](https://arxiv.org/pdf/2109.04075.pdf) [ICCV 2021] [waiting code](https://github.com/MCG-NJU/SSD-LT) 
+
+[Procrustean Training for Imbalanced Deep Learning](https://openaccess.thecvf.com/content/ICCV2021/papers/Ye_Procrustean_Training_for_Imbalanced_Deep_Learning_ICCV_2021_paper.pdf) (ICCV 2021) 
+
+[Self Supervision to Distillation for Long-Tailed Visual Recognition](https://openaccess.thecvf.com/content/ICCV2021/papers/Li_Self_Supervision_to_Distillation_for_Long-Tailed_Visual_Recognition_ICCV_2021_paper.pdf) (ICCV 2021) 
+
 (GistNet) [GistNet: a Geometric Structure Transfer Network for Long-Tailed Recognition](https://openaccess.thecvf.com/content/ICCV2021/papers/Liu_GistNet_A_Geometric_Structure_Transfer_Network_for_Long-Tailed_Recognition_ICCV_2021_paper.pdf) (ICCV 2021) 
 
 (PaCo) [Parametric Contrastive Learning](https://arxiv.org/pdf/2107.12028.pdf)  (ICCV 2021) [Code](https://github.com/dvlab-research/Parametric-Contrastive-Learning)
@@ -180,7 +189,7 @@ Papers related to long-tailed tasks
 
 [Memory-based Jitter: Improving Visual Recognition on Long-tailed Data with Diversity In Memory](https://arxiv.org/pdf/2008.09809.pdf) preprint
 
-[FASA: Feature Augmentation and Sampling Adaptation for Long-Tailed Instance Segmentation](https://arxiv.org/pdf/2102.12867.pdf)  preprint [waiting code](https://paperswithcode.com/paper/fasa-feature-augmentation-and-sampling)  
+[FASA: Feature Augmentation and Sampling Adaptation for Long-Tailed Instance Segmentation](https://arxiv.org/pdf/2102.12867.pdf)  (ICCV 2021) [Code](https://github.com/yuhangzang/FASA)   
 
 > 1. Augmentation is performed in the feature space.
 > 2. For a class to be augmentated, we can compute its mean features from current batch data and then update it in a momentum way. So we can generate virtual features by firstly randomly sampling variation from a gaussian prior and add the variation to the mean feature.
