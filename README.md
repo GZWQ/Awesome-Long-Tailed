@@ -51,13 +51,15 @@ Imbalance factor = 100
 
 Using ResNet-152 as backbone.
 
-|                    | Many | Medium | Few  | All  |
-| :----------------: | :--: | :----: | :--: | :--: |
-|  LADE (CVPR 2021)  | 42.8 |  39.1  | 29.6 | 38.8 |
-|  RSG (CVPR 2021)   | 41.9 |  41.4  | 32.0 | 39.3 |
-| MiSLAS (CVPR 2021) |      |        |      | 40.4 |
-|    TADE (2021)     |      |        |      | 40.9 |
-|  PaCo (ICCV 2021)  | 36.1 |  47.9  | 35.3 | 41.2 |
+|                     | Many | Medium | Few  | All  |
+| :-----------------: | :--: | :----: | :--: | :--: |
+|  LADE (CVPR 2021)   | 42.8 |  39.1  | 29.6 | 38.8 |
+|    LDA (MM 2021)    | 41.0 |  40.7  | 32.1 | 39.1 |
+|   RSG (CVPR 2021)   | 41.9 |  41.4  | 32.0 | 39.3 |
+| GistNet (ICCV 2021) | 42.5 |  40.8  | 32.1 | 39.6 |
+| MiSLAS (CVPR 2021)  |      |        |      | 40.4 |
+|     TADE (2021)     |      |        |      | 40.9 |
+|  PaCo (ICCV 2021)   | 36.1 |  47.9  | 35.3 | 41.2 |
 
 
 
@@ -71,6 +73,7 @@ Using ResNet-50 as backbone.
 | LogitAdjust (ICLR 2021) |      |        |      | 51.1  |
 |     KCL (ICLR 2021)     | 61.8 |  49.4  | 30.9 | 51.5  |
 |   MiSLAS (CVPR 2021)    |  -   |   -    |  -   | 52.7  |
+|      LDA (MM 2021)      | 64.5 |  50.9  | 31.5 | 53.4  |
 |     ACE (ICCV 2021)     |  -   |   -    |  -   | 54.7  |
 |    RIDE (ICLR 2021)     |  -   |   -    |  -   | 55.4  |
 |       CBD (2021)        | 68.5 |  52.7  | 29.2 | 55.6  |
@@ -92,6 +95,7 @@ Using ResNet-50 as backbone.
 |     BBN (CVPR 2020)     |  -   |   -    |  -   | 69.62 |
 |    LADE (CVPR 2021)     |  -   |   -    |  -   | 70.0  |
 |     RSG (CVPR 2021)     |  -   |   -    |  -   | 70.26 |
+|   GistNet (ICCV 2021)   |      |        |      | 70.8  |
 |   MiSLAS (CVPR 2021)    |  -   |   -    |  -   | 71.6  |
 |    RIDE (ICLR 2021)     | 70.9 |  72.4  | 73.1 | 72.6  |
 |     ACE (ICCV 2021)     |      |        |      | 72.9  |
@@ -109,6 +113,8 @@ Papers related to long-tailed tasks
 
 
 ## Re-weighting
+
+[Influence-Balanced Loss for Imbalanced Visual Classification](https://openaccess.thecvf.com/content/ICCV2021/papers/Park_Influence-Balanced_Loss_for_Imbalanced_Visual_Classification_ICCV_2021_paper.pdf) (ICCV 2021) [Code](https://github.com/pseulki/IB-Loss) 
 
 [Equalization Loss v2: A New Gradient Balance Approach for Long-tailed Object Detection](https://arxiv.org/pdf/2012.08548.pdf) (CVPR 2021) [Code](https://github.com/tztztztztz/eqlv2) 
 
@@ -143,6 +149,8 @@ Papers related to long-tailed tasks
 
 
 ## Feature Manipulation
+
+(GistNet) [GistNet: a Geometric Structure Transfer Network for Long-Tailed Recognition](https://openaccess.thecvf.com/content/ICCV2021/papers/Liu_GistNet_A_Geometric_Structure_Transfer_Network_for_Long-Tailed_Recognition_ICCV_2021_paper.pdf) (ICCV 2021) 
 
 (PaCo) [Parametric Contrastive Learning](https://arxiv.org/pdf/2107.12028.pdf)  (ICCV 2021) [Code](https://github.com/dvlab-research/Parametric-Contrastive-Learning)
 
@@ -189,13 +197,15 @@ Papers related to long-tailed tasks
 
 > Disentangle the prediction from teach model into multiple "virtual examples", i.e., many "one-hot gt".
 
-
+(LDA) [Long-tailed Distribution Adaptation](https://arxiv.org/pdf/2110.02686.pdf) (ACM MM 2021) [Code](https://github.com/pengzhiliang/LDA) 
 
 ## Multiple Experts
 
 (ACE) [ACE: Ally Complementary Experts for Solving Long-Tailed Recognition in One-Shot](https://arxiv.org/pdf/2108.02385.pdf) (ICCV 2021) [Code](https://github.com/jrcai/ACE) 
 
 (RIDE) [Long-tailed Recognition by Routing Diverse Distribution-Aware Experts](https://arxiv.org/pdf/2010.01809.pdf) (ICLR 2021) [Code](https://github.com/frank-xwang/RIDE-LongTailRecognition) 
+
+(LDA) [Long-tailed Distribution Adaptation](https://arxiv.org/pdf/2110.02686.pdf) (ACM MM 2021) [Code](https://github.com/pengzhiliang/LDA) 
 
 [Long-Tailed Recognition Using Class-Balanced Experts](https://arxiv.org/pdf/2004.03706.pdf) (DAGM-GCPR 2020) [Code](https://github.com/ssfootball04/class-balanced-experts) 
 
@@ -208,3 +218,6 @@ Papers related to long-tailed tasks
 (TADE) [Test-Agnostic Long-Tailed Recognition by Test-Time Aggregating Diverse Experts with Self-Supervision](https://arxiv.org/pdf/2107.09249.pdf) (preprint) [Code](https://github.com/Vanint/TADE-AgnosticLT) 
 
 > Based on RIDE.
+
+
+
