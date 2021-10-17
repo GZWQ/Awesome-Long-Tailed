@@ -115,6 +115,14 @@ Papers related to long-tailed tasks
 
 
 
+## Survey
+
+[Deep Long-Tailed Learning: A Survey](https://arxiv.org/pdf/2110.04596.pdf)  
+
+[Bag of Tricks for Long-Tailed Visual Recognition with Deep Convolutional Neural Networks](http://www.lamda.nju.edu.cn/zhangys/papers/AAAI_tricks.pdf) (AAAI 2021) [Code](https://github.com/zhangyongshun/BagofTricks-LT)  
+
+
+
 ## Re-weighting
 
 [Influence-Balanced Loss for Imbalanced Visual Classification](https://openaccess.thecvf.com/content/ICCV2021/papers/Park_Influence-Balanced_Loss_for_Imbalanced_Visual_Classification_ICCV_2021_paper.pdf) (ICCV 2021) [Code](https://github.com/pseulki/IB-Loss) 
