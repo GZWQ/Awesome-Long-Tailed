@@ -135,7 +135,7 @@ Papers related to long-tailed tasks
 
 (LADE) [Disentangling Label Distribution for Long-tailed Visual Recognition](https://arxiv.org/pdf/2012.00321.pdf) (CVPR 2021) [Code](https://github.com/hyperconnect/LADE) 
 
-> An extension of BalancedSoftmax, but improvement is quite limited.
+> An extension of BalancedSoftmax while improvement is quite limited. But it can handle unknown distributions of testing datasets.
 
 (LogitAdjust) [Long-tail learning via logit adjustment](https://arxiv.org/pdf/2007.07314v1.pdf) (ICLR 2021)
 
@@ -205,6 +205,8 @@ Papers related to long-tailed tasks
 (BKD) [Balanced Knowledge Distillation for Long-tailed Learning](https://arxiv.org/pdf/2104.10510.pdf) preprint [Code](https://github.com/EricZsy/BalancedKnowledgeDistillation) 
 
 ### Logit Adjustment
+
+[Normalization Calibration (NorCal) for Long-Tailed Object Detection and Instance Segmentation](https://openreview.net/pdf?id=t9gKUW9T8fX)  (NIPS2021) [Code](https://github.com/tydpan/NorCal)  
 
 [t-vMF Similarity for Regularizing Intra-Class Feature Distribution](https://staff.aist.go.jp/takumi.kobayashi/publication/2021/CVPR2021.pdf) (CVPR2021) [Code](https://github.com/tk1980/tvMF) 
 
