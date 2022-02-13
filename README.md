@@ -72,6 +72,7 @@ Using ResNet-50 as backbone.
 | :---------------------: | :--: | :----: | :--: | :---: |
 |  MetaSAug (CVPR 2021)   |      |        |      | 47.39 |
 | LogitAdjust (ICLR 2021) |      |        |      | 51.1  |
+|     SSP (NIPS2020)      | 63.2 |  48.1  | 29.2 | 51.3  |
 |     KCL (ICLR 2021)     | 61.8 |  49.4  | 30.9 | 51.5  |
 |   MiSLAS (CVPR 2021)    |  -   |   -    |  -   | 52.7  |
 |      LDA (MM 2021)      | 64.5 |  50.9  | 31.5 | 53.4  |
@@ -143,7 +144,7 @@ Papers related to long-tailed tasks
 
 ## Sampling
 
-
+[Solving Long-tailed Recognition with Deep Realistic Taxonomic Classifier](https://arxiv.org/pdf/2007.09898.pdf) (ECCV 2020) [Code](https://github.com/gina9726/Deep-RTC) 
 
 ## Meta Learning
 
@@ -164,8 +165,6 @@ Papers related to long-tailed tasks
 (SSD) [Self Supervision to Distillation for Long-Tailed Visual Recognition](https://arxiv.org/pdf/2109.04075.pdf) [ICCV 2021] [waiting code](https://github.com/MCG-NJU/SSD-LT) 
 
 [Procrustean Training for Imbalanced Deep Learning](https://openaccess.thecvf.com/content/ICCV2021/papers/Ye_Procrustean_Training_for_Imbalanced_Deep_Learning_ICCV_2021_paper.pdf) (ICCV 2021) 
-
-[Self Supervision to Distillation for Long-Tailed Visual Recognition](https://openaccess.thecvf.com/content/ICCV2021/papers/Li_Self_Supervision_to_Distillation_for_Long-Tailed_Visual_Recognition_ICCV_2021_paper.pdf) (ICCV 2021) 
 
 (GistNet) [GistNet: a Geometric Structure Transfer Network for Long-Tailed Recognition](https://openaccess.thecvf.com/content/ICCV2021/papers/Liu_GistNet_A_Geometric_Structure_Transfer_Network_for_Long-Tailed_Recognition_ICCV_2021_paper.pdf) (ICCV 2021) 
 
@@ -206,6 +205,8 @@ Papers related to long-tailed tasks
 
 ### Logit Adjustment
 
+[Towards Calibrated Model for Long-Tailed Visual Recognition from Prior Perspective](https://openreview.net/pdf?id=vqzAfN-BoA_) (NIPS2021) [Code](https://github.com/XuZhengzhuo/Prior-LT) 
+
 [Normalization Calibration (NorCal) for Long-Tailed Object Detection and Instance Segmentation](https://openreview.net/pdf?id=t9gKUW9T8fX)  (NIPS2021) [Code](https://github.com/tydpan/NorCal)  
 
 [t-vMF Similarity for Regularizing Intra-Class Feature Distribution](https://staff.aist.go.jp/takumi.kobayashi/publication/2021/CVPR2021.pdf) (CVPR2021) [Code](https://github.com/tk1980/tvMF) 
@@ -226,9 +227,11 @@ Papers related to long-tailed tasks
 
 (LDA) [Long-tailed Distribution Adaptation](https://arxiv.org/pdf/2110.02686.pdf) (ACM MM 2021) [Code](https://github.com/pengzhiliang/LDA) 
 
-[Long-Tailed Recognition Using Class-Balanced Experts](https://arxiv.org/pdf/2004.03706.pdf) (DAGM-GCPR 2020) [Code](https://github.com/ssfootball04/class-balanced-experts) 
+(CBD) [Class-Balanced Distillation for Long-Tailed Visual Recognition](https://arxiv.org/pdf/2104.05279.pdf) (BMVC 2021) [Code](https://github.com/google-research/google-research/tree/master/class_balanced_distillation)  
 
-(CBD) [Class-Balanced Distillation for Long-Tailed Visual Recognition](https://arxiv.org/pdf/2104.05279.pdf) (preprint) [waiting code](https://paperswithcode.com/paper/class-balanced-distillation-for-long-tailed) 
+> A two-stage solution. The first stage is to learn multiple teacher models distinguished by different data augmentation strategies. In Stage2, a student model is trained from scratch distilled by teachers' knowledge in the feature space instead of the classifier layer.
+
+[Long-Tailed Recognition Using Class-Balanced Experts](https://arxiv.org/pdf/2004.03706.pdf) (DAGM-GCPR 2020) [Code](https://github.com/ssfootball04/class-balanced-experts) 
 
 (MoE) [Improving Long-Tailed Classification from Instance Level](https://arxiv.org/pdf/2104.06094.pdf) (preprint) [waiting code](https://paperswithcode.com/paper/improving-long-tailed-classification-from) 
 
