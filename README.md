@@ -162,6 +162,12 @@ Papers related to long-tailed tasks
 
 ## Feature Manipulation
 
+[Self-supervised Learning is More Robust to Dataset Imbalance](https://openreview.net/forum?id=4AZz9osqrar) (ICLR 2022)
+
+[Do deep networks transfer invariances across classes?](https://openreview.net/forum?id=Fn7i_r5rR0q) (ICLR 2022)
+
+> Experiments on only small-sacle datasets.
+
 (SSD) [Self Supervision to Distillation for Long-Tailed Visual Recognition](https://arxiv.org/pdf/2109.04075.pdf) [ICCV 2021] [waiting code](https://github.com/MCG-NJU/SSD-LT) 
 
 [Procrustean Training for Imbalanced Deep Learning](https://openaccess.thecvf.com/content/ICCV2021/papers/Ye_Procrustean_Training_for_Imbalanced_Deep_Learning_ICCV_2021_paper.pdf) (ICCV 2021) 
@@ -205,6 +211,8 @@ Papers related to long-tailed tasks
 
 ### Logit Adjustment
 
+[Optimal Transport for Long-Tailed Recognition with Learnable Cost Matrix](https://openreview.net/forum?id=t98k9ePQQpn) (ICLR 2022)
+
 [Towards Calibrated Model for Long-Tailed Visual Recognition from Prior Perspective](https://openreview.net/pdf?id=vqzAfN-BoA_) (NIPS2021) [Code](https://github.com/XuZhengzhuo/Prior-LT) 
 
 [Normalization Calibration (NorCal) for Long-Tailed Object Detection and Instance Segmentation](https://openreview.net/pdf?id=t9gKUW9T8fX)  (NIPS2021) [Code](https://github.com/tydpan/NorCal)  
@@ -224,8 +232,6 @@ Papers related to long-tailed tasks
 (ACE) [ACE: Ally Complementary Experts for Solving Long-Tailed Recognition in One-Shot](https://arxiv.org/pdf/2108.02385.pdf) (ICCV 2021) [Code](https://github.com/jrcai/ACE) 
 
 (RIDE) [Long-tailed Recognition by Routing Diverse Distribution-Aware Experts](https://arxiv.org/pdf/2010.01809.pdf) (ICLR 2021) [Code](https://github.com/frank-xwang/RIDE-LongTailRecognition) 
-
-(LDA) [Long-tailed Distribution Adaptation](https://arxiv.org/pdf/2110.02686.pdf) (ACM MM 2021) [Code](https://github.com/pengzhiliang/LDA) 
 
 (CBD) [Class-Balanced Distillation for Long-Tailed Visual Recognition](https://arxiv.org/pdf/2104.05279.pdf) (BMVC 2021) [Code](https://github.com/google-research/google-research/tree/master/class_balanced_distillation)  
 
