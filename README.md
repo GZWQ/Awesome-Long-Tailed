@@ -52,15 +52,16 @@ Imbalance factor = 100
 
 Using ResNet-152 as backbone.
 
-|                     | Many | Medium | Few  | All  |
-| :-----------------: | :--: | :----: | :--: | :--: |
-|  LADE (CVPR 2021)   | 42.8 |  39.1  | 29.6 | 38.8 |
-|    LDA (MM 2021)    | 41.0 |  40.7  | 32.1 | 39.1 |
-|   RSG (CVPR 2021)   | 41.9 |  41.4  | 32.0 | 39.3 |
-| GistNet (ICCV 2021) | 42.5 |  40.8  | 32.1 | 39.6 |
-| MiSLAS (CVPR 2021)  |      |        |      | 40.4 |
-|     TADE (2021)     |      |        |      | 40.9 |
-|  PaCo (ICCV 2021)   | 36.1 |  47.9  | 35.3 | 41.2 |
+|                      | Many | Medium | Few  | All  |
+| :------------------: | :--: | :----: | :--: | :--: |
+|   LADE (CVPR 2021)   | 42.8 |  39.1  | 29.6 | 38.8 |
+|    LDA (MM 2021)     | 41.0 |  40.7  | 32.1 | 39.1 |
+|   RSG (CVPR 2021)    | 41.9 |  41.4  | 32.0 | 39.3 |
+| DisAlign (CVPR 2021) | 40.4 |  42.4  | 30.1 | 39.3 |
+| GistNet (ICCV 2021)  | 42.5 |  40.8  | 32.1 | 39.6 |
+|  MiSLAS (CVPR 2021)  |      |        |      | 40.4 |
+|     TADE (2021)      |      |        |      | 40.9 |
+|   PaCo (ICCV 2021)   | 36.1 |  47.9  | 35.3 | 41.2 |
 
 
 
@@ -75,6 +76,7 @@ Using ResNet-50 as backbone.
 |     SSP (NIPS2020)      | 63.2 |  48.1  | 29.2 | 51.3  |
 |     KCL (ICLR 2021)     | 61.8 |  49.4  | 30.9 | 51.5  |
 |   MiSLAS (CVPR 2021)    |  -   |   -    |  -   | 52.7  |
+|  DisAlign (CVPR 2021)   | 61.3 |  52.2  | 31.4 | 52.9  |
 |      LDA (MM 2021)      | 64.5 |  50.9  | 31.5 | 53.4  |
 |     ACE (ICCV 2021)     |  -   |   -    |  -   | 54.7  |
 |    RIDE (ICLR 2021)     |  -   |   -    |  -   | 55.4  |
@@ -95,6 +97,7 @@ Using ResNet-50 as backbone.
 | LogitAdjust (ICLR 2021) |  -   |   -    |  -   | 66.36 |
 |  MetaSAug (CVPR 2021)   |  -   |   -    |  -   | 68.75 |
 |     KCL (ICLR 2021)     |  -   |   -    |  -   | 68.6  |
+|  DisAlign (CVPR 2021)   |      |        |      |       |
 |     BBN (CVPR 2020)     |  -   |   -    |  -   | 69.62 |
 |    LADE (CVPR 2021)     |  -   |   -    |  -   | 70.0  |
 |     RSG (CVPR 2021)     |  -   |   -    |  -   | 70.26 |
@@ -221,9 +224,9 @@ Papers related to long-tailed tasks
 
 [Distribution Alignment: A Unified Framework for Long-tail Visual Recognition](https://arxiv.org/pdf/2103.16370.pdf) (CVPR 2021) [Code](https://github.com/Megvii-BaseDetection/DisAlign) 
 
-[Distilling Virtual Examples for Long-tailed Recognition](https://arxiv.org/pdf/2103.15042.pdf) (CVPR 2021)
+(DisAlign) [Distilling Virtual Examples for Long-tailed Recognition](https://arxiv.org/pdf/2103.15042.pdf) (CVPR 2021)
 
-> Disentangle the prediction from teach model into multiple "virtual examples", i.e., many "one-hot gt".
+> Two-stage decoupling based. Calibrate the classifier and align the model prediction with the desired distribution favoring the balanced predcition. 
 
 (LDA) [Long-tailed Distribution Adaptation](https://arxiv.org/pdf/2110.02686.pdf) (ACM MM 2021) [Code](https://github.com/pengzhiliang/LDA) 
 
