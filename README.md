@@ -39,6 +39,7 @@ Imbalance factor = 100
 |    LADE (CVPR 2021)     |      |        |      | 45.4  |
 |     SSD (ICCV 2021)     |      |        |      | 46.0  |
 |   MiSLAS (CVPR 2021)    |      |        |      | 47.0  |
+|   DRO-LT (ICCV 2021)    | 64.7 |  50.0  | 23.8 | 47.3  |
 |  MetaSAug (CVPR 2021)   |  -   |   -    |  -   | 48.01 |
 |    RIDE (ICLR 2021)     | 69.3 |  49.3  | 26.0 | 49.1  |
 |     ACE (ICCV 2021)     | 66.3 |  52.8  | 27.2 | 49.6  |
@@ -67,7 +68,7 @@ Using ResNet-152 as backbone.
 
 ## ImageNet_LT
 
-Using ResNet-50 as backbone.
+Using ResNet-50 as backbone (90 epochs)
 
 |                         | Many | Medium | Few  |  All  |
 | :---------------------: | :--: | :----: | :--: | :---: |
@@ -78,6 +79,7 @@ Using ResNet-50 as backbone.
 |   MiSLAS (CVPR 2021)    |  -   |   -    |  -   | 52.7  |
 |  DisAlign (CVPR 2021)   | 61.3 |  52.2  | 31.4 | 52.9  |
 |      LDA (MM 2021)      | 64.5 |  50.9  | 31.5 | 53.4  |
+|   DRO-LT (ICCV 2021)    | 64.0 |  49.8  | 33.1 | 53.5  |
 |     ACE (ICCV 2021)     |  -   |   -    |  -   | 54.7  |
 |    RIDE (ICLR 2021)     |  -   |   -    |  -   | 55.4  |
 |       CBD (2021)        | 68.5 |  52.7  | 29.2 | 55.6  |
@@ -90,7 +92,7 @@ Using ResNet-50 as backbone.
 
 ## iNaturalist18
 
-Using ResNet-50 as backbone.
+Using ResNet-50 as backbone (90 epochs)
 
 |                         | Many | Medium | Few  |  All  |
 | :---------------------: | :--: | :----: | :--: | :---: |
@@ -99,6 +101,7 @@ Using ResNet-50 as backbone.
 |     KCL (ICLR 2021)     |  -   |   -    |  -   | 68.6  |
 |  DisAlign (CVPR 2021)   |      |        |      |       |
 |     BBN (CVPR 2020)     |  -   |   -    |  -   | 69.62 |
+|   DRO-LT (ICCV 2021)    |  -   |   -    |  -   | 69.7  |
 |    LADE (CVPR 2021)     |  -   |   -    |  -   | 70.0  |
 |     RSG (CVPR 2021)     |  -   |   -    |  -   | 70.26 |
 |   GistNet (ICCV 2021)   |      |        |      | 70.8  |
@@ -175,13 +178,17 @@ Papers related to long-tailed tasks
 
 [Procrustean Training for Imbalanced Deep Learning](https://openaccess.thecvf.com/content/ICCV2021/papers/Ye_Procrustean_Training_for_Imbalanced_Deep_Learning_ICCV_2021_paper.pdf) (ICCV 2021) 
 
+[Distributional Robustness Loss for Long-tail Learning](https://openaccess.thecvf.com/content/ICCV2021/papers/Samuel_Distributional_Robustness_Loss_for_Long-Tail_Learning_ICCV_2021_paper.pdf) (ICCV 2021) [Code](https://github.com/dvirsamuel/DRO-LT) 
+
+> This method focuses on improving the learned representation at the penultimate layer by using an extra robustness loss. The robustness loss is computed in the feature level and kind of like contrastive loss.
+
 (GistNet) [GistNet: a Geometric Structure Transfer Network for Long-Tailed Recognition](https://openaccess.thecvf.com/content/ICCV2021/papers/Liu_GistNet_A_Geometric_Structure_Transfer_Network_for_Long-Tailed_Recognition_ICCV_2021_paper.pdf) (ICCV 2021) 
 
 (PaCo) [Parametric Contrastive Learning](https://arxiv.org/pdf/2107.12028.pdf)  (ICCV 2021) [Code](https://github.com/dvlab-research/Parametric-Contrastive-Learning)
 
 (RSG) [RSG: A Simple but Effective Module for Learning Imbalanced Datasets](https://openaccess.thecvf.com/content/CVPR2021/papers/Wang_RSG_A_Simple_but_Effective_Module_for_Learning_Imbalanced_Datasets_CVPR_2021_paper.pdf) (CVPR 2021) [Code](https://github.com/Jianf-Wang/RSG) 
 
-> RSG(Rare-class Sample Generator) aims to generate some new samples for rare classes during training.
+> RSG(Rare-class Sample Generator) aims to generate some new samples for rare classes during training. 
 
 [Contrastive Learning based Hybrid Networks for Long-Tailed Image Classification](https://arxiv.org/pdf/2103.14267.pdf) (CVPR 2021) [Waiting code](https://paperswithcode.com/paper/contrastive-learning-based-hybrid-networks) 
 
@@ -230,6 +237,8 @@ Papers related to long-tailed tasks
 
 (LDA) [Long-tailed Distribution Adaptation](https://arxiv.org/pdf/2110.02686.pdf) (ACM MM 2021) [Code](https://github.com/pengzhiliang/LDA) 
 
+[Long-Tail Learning via Logit Adjustment](https://arxiv.org/pdf/2007.07314.pdf) (ICLR 2021) [Code](https://github.com/google-research/google-research/tree/master/logit_adjustment) 
+
 ## Multiple Experts
 
 (ACE) [ACE: Ally Complementary Experts for Solving Long-Tailed Recognition in One-Shot](https://arxiv.org/pdf/2108.02385.pdf) (ICCV 2021) [Code](https://github.com/jrcai/ACE) 
@@ -252,3 +261,22 @@ Papers related to long-tailed tasks
 
 
 
+# New Task Settings
+
+[On Model Calibration for Long-Tailed Object Detection and Instance Segmentation](https://arxiv.org/pdf/2107.02170.pdf) (NIPS 2021) [Code](https://github.com/tydpan/NorCal) 
+
+> Post-processing of logits. Except the background logit, a temperature-like hyperparameter is used to scale down the logits, which is based on the class frequence. I also applied this post-processing techinique on Long-tailed classification and only effective in CIFAR10-LT and CIFAR100-LT but not in large scale dataset like ImageNet-LT.
+
+[Seesaw Loss for Long-Tailed Instance Segmentation](https://openaccess.thecvf.com/content/CVPR2021/papers/Wang_Seesaw_Loss_for_Long-Tailed_Instance_Segmentation_CVPR_2021_paper.pdf) (CVPR 2021) [Code](https://github.com/open-mmlab/mmdetection/tree/master/configs/seesaw_loss) 
+
+> Cross entropy adjusting based. Two scaling factor is applied in the softmax. The first is to decrease the graident scale on tail classes when the input image belongs to a head class. The second is increse the gradient panelty on any classes if it is predicted wrongly.
+
+[CReST: A Class-Rebalancing Self-Training Framework for Imbalanced Semi-Supervised Learning](https://openaccess.thecvf.com/content/CVPR2021/papers/Wei_CReST_A_Class-Rebalancing_Self-Training_Framework_for_Imbalanced_Semi-Supervised_Learning_CVPR_2021_paper.pdf) (CVPR 2021) [Code](https://github.com/google-research/crest) 
+
+[Imbalanced Continual Learning with Partitioning Reservoir Sampling](https://arxiv.org/pdf/2009.03632.pdf) (ECCV 2020) [Code](https://github.com/cdjkim/PRS) 
+
+[The Devil is in Classification: A Simple Framework for Long-tail Instance Segmentation](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123590715.pdf) (ECCV 2020) [Code](https://github.com/twangnh/SimCal)
+
+[VideoLT: Large-scale Long-tailed Video Recognition](https://arxiv.org/pdf/2105.02668.pdf) (ICCV 2021) [Code](https://github.com/17Skye17/VideoLT) 
+
+[Adversarial Robustness under Long-Tailed Distribution](https://arxiv.org/pdf/2104.02703.pdf) (CVPR 2021) [Code](https://github.com/wutong16/Adversarial_Long-Tail) 
