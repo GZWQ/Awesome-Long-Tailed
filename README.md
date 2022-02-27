@@ -267,16 +267,34 @@ Papers related to long-tailed tasks
 
 > Post-processing of logits. Except the background logit, a temperature-like hyperparameter is used to scale down the logits, which is based on the class frequence. I also applied this post-processing techinique on Long-tailed classification and only effective in CIFAR10-LT and CIFAR100-LT but not in large scale dataset like ImageNet-LT.
 
+[Adaptive Class Suppression Loss for Long-Tail Object Detection](https://arxiv.org/pdf/2104.00885.pdf) (CVPR 2021) [Code](https://github.com/CASIA-IVA-Lab/ACSL) 
+
 [Seesaw Loss for Long-Tailed Instance Segmentation](https://openaccess.thecvf.com/content/CVPR2021/papers/Wang_Seesaw_Loss_for_Long-Tailed_Instance_Segmentation_CVPR_2021_paper.pdf) (CVPR 2021) [Code](https://github.com/open-mmlab/mmdetection/tree/master/configs/seesaw_loss) 
 
 > Cross entropy adjusting based. Two scaling factor is applied in the softmax. The first is to decrease the graident scale on tail classes when the input image belongs to a head class. The second is increse the gradient panelty on any classes if it is predicted wrongly.
 
 [CReST: A Class-Rebalancing Self-Training Framework for Imbalanced Semi-Supervised Learning](https://openaccess.thecvf.com/content/CVPR2021/papers/Wei_CReST_A_Class-Rebalancing_Self-Training_Framework_for_Imbalanced_Semi-Supervised_Learning_CVPR_2021_paper.pdf) (CVPR 2021) [Code](https://github.com/google-research/crest) 
 
+[DropLoss for Long-Tail Instance Segmentation](https://arxiv.org/pdf/2104.06402.pdf) (AAAI 2021) [Code](https://github.com/timy90022/DropLoss) 
+
+[Equalization Loss for Long-Tailed Object Recognition](https://arxiv.org/pdf/2003.05176.pdf) (CVPR 2020) [Code](https://github.com/tztztztztz/eql.detectron2) 
+
+[Overcoming Classifier Imbalance for Long-tail Object Detection with Balanced Group Softmax](https://arxiv.org/pdf/2006.10408.pdf) (CVPR 2020) [Code](https://github.com/FishYuLi/BalancedGroupSoftmax) 
+
 [Imbalanced Continual Learning with Partitioning Reservoir Sampling](https://arxiv.org/pdf/2009.03632.pdf) (ECCV 2020) [Code](https://github.com/cdjkim/PRS) 
 
-[The Devil is in Classification: A Simple Framework for Long-tail Instance Segmentation](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123590715.pdf) (ECCV 2020) [Code](https://github.com/twangnh/SimCal)
+[The Devil is in Classification: A Simple Framework for Long-tail Instance Segmentation](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123590715.pdf) (ECCV 2020) [Code](https://github.com/twangnh/SimCal) 
+
+> Retraining the classification head only with a bi-level sampling scheme. During the inference stage, two classifiers are combined to make the final prediction. 
 
 [VideoLT: Large-scale Long-tailed Video Recognition](https://arxiv.org/pdf/2105.02668.pdf) (ICCV 2021) [Code](https://github.com/17Skye17/VideoLT) 
 
 [Adversarial Robustness under Long-Tailed Distribution](https://arxiv.org/pdf/2104.02703.pdf) (CVPR 2021) [Code](https://github.com/wutong16/Adversarial_Long-Tail) 
+
+[Calibrating Concepts and Operations: Towards Symbolic Reasoning on Real Images]()
+
+[BGT-Net: Bidirectional GRU Transformer Network for Scene Graph Generation]()
+
+[Google Landmarks Dataset v2 -- A Large-Scale Benchmark for Instance-Level Recognition and Retrieval]
+
+[Learning of Visual Relations: The Devil is in the Tails]
