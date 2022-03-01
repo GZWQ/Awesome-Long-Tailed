@@ -259,19 +259,26 @@ Papers related to long-tailed tasks
 
 # New Task Settings
 
-LVIS-v0.5 and ResNet50-FPN.
+Results on LVIS-v1.0 and ResNet50-FPN is the backbone.
 
+|        Method        | AP_b  | AP_f  | AP_c  | AP_r  |  AP   |
+| :------------------: | :---: | :---: | :---: | :---: | :---: |
+| MosaicOS (ICCV 2021) | 25.05 | 28.83 | 22.99 | 18.17 | 24.45 |
+|  EQL v2 (CVPR 2021)  | 26.1  | 30.2  | 24.3  | 17.7  | 25.5  |
+|   ACSL (CVPR 2021)   |   -   | 29.37 | 26.41 | 18.64 | 26.36 |
+|  Seesaw (CVPR 2021)  | 27.4  | 29.8  | 26.1  | 19.6  | 26.4  |
+|   LOCE (ICCV 2021)   | 27.4  | 30.7  | 26.2  | 18.5  | 26.6  |
+|  NORCAL (NIPS 2021)  | 27.77 | 29.10 | 25.82 | 23.86 | 26.76 |
 
-
-[On Model Calibration for Long-Tailed Object Detection and Instance Segmentation](https://arxiv.org/pdf/2107.02170.pdf) (NIPS 2021) [Code](https://github.com/tydpan/NorCal) 
+(NORCAL) [On Model Calibration for Long-Tailed Object Detection and Instance Segmentation](https://arxiv.org/pdf/2107.02170.pdf) (NIPS 2021) [Code](https://github.com/tydpan/NorCal) 
 
 > Post-processing of logits. Except the background logit, a temperature-like hyperparameter is used to scale down the logits, which is based on the class frequence. I also applied this post-processing techinique on Long-tailed classification and only effective in CIFAR10-LT and CIFAR100-LT but not in large scale dataset like ImageNet-LT.
 
-[Exploring Classification Equilibrium in Long-Tailed Object Detection](https://arxiv.org/pdf/2108.07507.pdf) (ICCV 2021) [Code](https://github.com/fcjian/LOCE) 
+(LOCE) [Exploring Classification Equilibrium in Long-Tailed Object Detection](https://arxiv.org/pdf/2108.07507.pdf) (ICCV 2021) [Code](https://github.com/fcjian/LOCE) 
 
 > Two type of strategies are used: logit margin adjustment and object-level features augmentation. Both strategies are based on the mean class accuraies instead of the class frequency. 
 
-[MOSAICOS: A Simple and Effective Use of Object-Centric Images for Long-Tailed Object Detection](https://arxiv.org/pdf/2102.08884.pdf) (ICCV 2021) [Code](https://github.com/czhang0528/MosaicOS/) 
+(MosaicOS) [MOSAICOS: A Simple and Effective Use of Object-Centric Images for Long-Tailed Object Detection](https://arxiv.org/pdf/2102.08884.pdf) (ICCV 2021) [Code](https://github.com/czhang0528/MosaicOS/) 
 
 > Data augmentation method. Utilize object images from ImageNet to create pseudo scene image, and fine-tune the model.
 
@@ -279,19 +286,17 @@ LVIS-v0.5 and ResNet50-FPN.
 
 > Effective in both COCO and LVIS.
 
-[Adaptive Class Suppression Loss for Long-Tail Object Detection](https://arxiv.org/pdf/2104.00885.pdf) (CVPR 2021) [Code](https://github.com/CASIA-IVA-Lab/ACSL) 
+(ACSL) [Adaptive Class Suppression Loss for Long-Tail Object Detection](https://arxiv.org/pdf/2104.00885.pdf) (CVPR 2021) [Code](https://github.com/CASIA-IVA-Lab/ACSL) 
 
 > Similar to Equalization Loss and Balanced Group Softmax, it also tries to supress the negative graidents on tail classes. But instead of using prior frequency information as the signal, it uses the prediction confidence to decide whether suppresses the negative gradients.
 
-[Seesaw Loss for Long-Tailed Instance Segmentation](https://openaccess.thecvf.com/content/CVPR2021/papers/Wang_Seesaw_Loss_for_Long-Tailed_Instance_Segmentation_CVPR_2021_paper.pdf) (CVPR 2021) [Code](https://github.com/open-mmlab/mmdetection/tree/master/configs/seesaw_loss) 
+(Seesaw) [Seesaw Loss for Long-Tailed Instance Segmentation](https://openaccess.thecvf.com/content/CVPR2021/papers/Wang_Seesaw_Loss_for_Long-Tailed_Instance_Segmentation_CVPR_2021_paper.pdf) (CVPR 2021) [Code](https://github.com/open-mmlab/mmdetection/tree/master/configs/seesaw_loss) 
 
 > Cross entropy adjusting based. Two scaling factor is applied in the softmax. The first is to decrease the graident scale on tail classes when the input image belongs to a head class. The second is increse the gradient panelty on any classes if it is predicted wrongly.
 
-[Equalization Loss v2: A New Gradient Balance Approach for Long-tailed Object Detection](https://openaccess.thecvf.com/content/CVPR2021/papers/Tan_Equalization_Loss_v2_A_New_Gradient_Balance_Approach_for_Long-Tailed_CVPR_2021_paper.pdf) (CVPR 2021) [Code](https://github.com/tztztztztz/eqlv2) 
+(EQL v2) [Equalization Loss v2: A New Gradient Balance Approach for Long-tailed Object Detection](https://openaccess.thecvf.com/content/CVPR2021/papers/Tan_Equalization_Loss_v2_A_New_Gradient_Balance_Approach_for_Long-Tailed_CVPR_2021_paper.pdf) (CVPR 2021) [Code](https://github.com/tztztztztz/eqlv2) 
 
 > Gradient-guided re-weighting
-
-[Exploring Classification Equilibrium in Long-Tailed Object Detection](https://openaccess.thecvf.com/content/ICCV2021/papers/Feng_Exploring_Classification_Equilibrium_in_Long-Tailed_Object_Detection_ICCV_2021_paper.pdf) (CVPR 2021) [Code](https://github.com/fcjian/LOCE) 
 
 [DropLoss for Long-Tail Instance Segmentation](https://arxiv.org/pdf/2104.06402.pdf) (AAAI 2021) [Code](https://github.com/timy90022/DropLoss) 
 
