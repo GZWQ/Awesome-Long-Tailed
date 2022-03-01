@@ -134,10 +134,6 @@ Papers related to long-tailed tasks
 
 [Influence-Balanced Loss for Imbalanced Visual Classification](https://openaccess.thecvf.com/content/ICCV2021/papers/Park_Influence-Balanced_Loss_for_Imbalanced_Visual_Classification_ICCV_2021_paper.pdf) (ICCV 2021) [Code](https://github.com/pseulki/IB-Loss) 
 
-[Equalization Loss v2: A New Gradient Balance Approach for Long-tailed Object Detection](https://arxiv.org/pdf/2012.08548.pdf) (CVPR 2021) [Code](https://github.com/tztztztztz/eqlv2) 
-
->  Gradient-guided re-weighting
-
 [Adaptive Class Suppression Loss for Long-Tail Object Detection](https://arxiv.org/pdf/2104.00885.pdf) (CVPR 2021) [Code](https://github.com/CASIA-IVA-Lab/ACSL) 
 
 (LADE) [Disentangling Label Distribution for Long-tailed Visual Recognition](https://arxiv.org/pdf/2012.00321.pdf) (CVPR 2021) [Code](https://github.com/hyperconnect/LADE) 
@@ -263,19 +259,49 @@ Papers related to long-tailed tasks
 
 # New Task Settings
 
+LVIS-v0.5 and ResNet50-FPN.
+
+
+
 [On Model Calibration for Long-Tailed Object Detection and Instance Segmentation](https://arxiv.org/pdf/2107.02170.pdf) (NIPS 2021) [Code](https://github.com/tydpan/NorCal) 
 
 > Post-processing of logits. Except the background logit, a temperature-like hyperparameter is used to scale down the logits, which is based on the class frequence. I also applied this post-processing techinique on Long-tailed classification and only effective in CIFAR10-LT and CIFAR100-LT but not in large scale dataset like ImageNet-LT.
 
+[Exploring Classification Equilibrium in Long-Tailed Object Detection](https://arxiv.org/pdf/2108.07507.pdf) (ICCV 2021) [Code](https://github.com/fcjian/LOCE) 
+
+> Two type of strategies are used: logit margin adjustment and object-level features augmentation. Both strategies are based on the mean class accuraies instead of the class frequency. 
+
+[MOSAICOS: A Simple and Effective Use of Object-Centric Images for Long-Tailed Object Detection](https://arxiv.org/pdf/2102.08884.pdf) (ICCV 2021) [Code](https://github.com/czhang0528/MosaicOS/) 
+
+> Data augmentation method. Utilize object images from ImageNet to create pseudo scene image, and fine-tune the model.
+
+[Simple Copy-Paste is a Strong Data Augmentation Method for Instance Segmentation](https://arxiv.org/pdf/2012.07177.pdf) (CVPR 2021) [Code](https://github.com/tensorflow/tpu/tree/master/models/official/detection/projects/copy_paste) 
+
+> Effective in both COCO and LVIS.
+
 [Adaptive Class Suppression Loss for Long-Tail Object Detection](https://arxiv.org/pdf/2104.00885.pdf) (CVPR 2021) [Code](https://github.com/CASIA-IVA-Lab/ACSL) 
+
+> Similar to Equalization Loss and Balanced Group Softmax, it also tries to supress the negative graidents on tail classes. But instead of using prior frequency information as the signal, it uses the prediction confidence to decide whether suppresses the negative gradients.
 
 [Seesaw Loss for Long-Tailed Instance Segmentation](https://openaccess.thecvf.com/content/CVPR2021/papers/Wang_Seesaw_Loss_for_Long-Tailed_Instance_Segmentation_CVPR_2021_paper.pdf) (CVPR 2021) [Code](https://github.com/open-mmlab/mmdetection/tree/master/configs/seesaw_loss) 
 
 > Cross entropy adjusting based. Two scaling factor is applied in the softmax. The first is to decrease the graident scale on tail classes when the input image belongs to a head class. The second is increse the gradient panelty on any classes if it is predicted wrongly.
 
-[CReST: A Class-Rebalancing Self-Training Framework for Imbalanced Semi-Supervised Learning](https://openaccess.thecvf.com/content/CVPR2021/papers/Wei_CReST_A_Class-Rebalancing_Self-Training_Framework_for_Imbalanced_Semi-Supervised_Learning_CVPR_2021_paper.pdf) (CVPR 2021) [Code](https://github.com/google-research/crest) 
+[Equalization Loss v2: A New Gradient Balance Approach for Long-tailed Object Detection](https://openaccess.thecvf.com/content/CVPR2021/papers/Tan_Equalization_Loss_v2_A_New_Gradient_Balance_Approach_for_Long-Tailed_CVPR_2021_paper.pdf) (CVPR 2021) [Code](https://github.com/tztztztztz/eqlv2) 
+
+> Gradient-guided re-weighting
+
+[Exploring Classification Equilibrium in Long-Tailed Object Detection](https://openaccess.thecvf.com/content/ICCV2021/papers/Feng_Exploring_Classification_Equilibrium_in_Long-Tailed_Object_Detection_ICCV_2021_paper.pdf) (CVPR 2021) [Code](https://github.com/fcjian/LOCE) 
 
 [DropLoss for Long-Tail Instance Segmentation](https://arxiv.org/pdf/2104.06402.pdf) (AAAI 2021) [Code](https://github.com/timy90022/DropLoss) 
+
+[Image-Level or Object-Level? A Tale of Two Resampling Strategies for Long-Tailed Detection](https://arxiv.org/pdf/2104.05702.pdf) (ICML 2021) [Code](https://github.com/NVlabs/RIO) 
+
+> Bi-level sampling. Repeat factor sampling (RFS) is used for image-level sampling. As for the object-level sampling, they propose a memory bank to store (feat, bbx) of tail classes so that more tail objects can be sampled during each batch.
+
+[Learning to Segment the Tail](https://openaccess.thecvf.com/content_CVPR_2020/papers/Hu_Learning_to_Segment_the_Tail_CVPR_2020_paper.pdf) (CVPR 2020) [Code](https://github.com/JoyHuYY1412/LST_LVIS) 
+
+> 
 
 [Equalization Loss for Long-Tailed Object Recognition](https://arxiv.org/pdf/2003.05176.pdf) (CVPR 2020) [Code](https://github.com/tztztztztz/eql.detectron2) 
 
@@ -286,6 +312,10 @@ Papers related to long-tailed tasks
 [The Devil is in Classification: A Simple Framework for Long-tail Instance Segmentation](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123590715.pdf) (ECCV 2020) [Code](https://github.com/twangnh/SimCal) 
 
 > Retraining the classification head only with a bi-level sampling scheme. During the inference stage, two classifiers are combined to make the final prediction. 
+
+[Forest R-CNN: Large-Vocabulary Long-Tailed Object Detection and Instance Segmentation](https://arxiv.org/pdf/2008.05676.pdf) (ACM MM 2020) [Code](https://github.com/JialianW/Forest_RCNN)  
+
+> 
 
 [VideoLT: Large-scale Long-tailed Video Recognition](https://arxiv.org/pdf/2105.02668.pdf) (ICCV 2021) [Code](https://github.com/17Skye17/VideoLT) 
 
@@ -298,3 +328,7 @@ Papers related to long-tailed tasks
 [Google Landmarks Dataset v2 -- A Large-Scale Benchmark for Instance-Level Recognition and Retrieval]
 
 [Learning of Visual Relations: The Devil is in the Tails]
+
+[CReST: A Class-Rebalancing Self-Training Framework for Imbalanced Semi-Supervised Learning](https://openaccess.thecvf.com/content/CVPR2021/papers/Wei_CReST_A_Class-Rebalancing_Self-Training_Framework_for_Imbalanced_Semi-Supervised_Learning_CVPR_2021_paper.pdf) (CVPR 2021) [Code](https://github.com/google-research/crest) 
+
+[Unsupervised Discovery of the Long-Tail in Instance Segmentation Using Hierarchical Self-Supervision](https://openaccess.thecvf.com/content/CVPR2021/papers/Weng_Unsupervised_Discovery_of_the_Long-Tail_in_Instance_Segmentation_Using_Hierarchical_CVPR_2021_paper.pdf) (CVPR 2021) [Code](https://github.com/ZZWENG/longtail_segmentation)   
