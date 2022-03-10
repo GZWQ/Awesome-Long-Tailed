@@ -134,8 +134,6 @@ Papers related to long-tailed tasks
 
 [Influence-Balanced Loss for Imbalanced Visual Classification](https://openaccess.thecvf.com/content/ICCV2021/papers/Park_Influence-Balanced_Loss_for_Imbalanced_Visual_Classification_ICCV_2021_paper.pdf) (ICCV 2021) [Code](https://github.com/pseulki/IB-Loss) 
 
-[Adaptive Class Suppression Loss for Long-Tail Object Detection](https://arxiv.org/pdf/2104.00885.pdf) (CVPR 2021) [Code](https://github.com/CASIA-IVA-Lab/ACSL) 
-
 (LADE) [Disentangling Label Distribution for Long-tailed Visual Recognition](https://arxiv.org/pdf/2012.00321.pdf) (CVPR 2021) [Code](https://github.com/hyperconnect/LADE) 
 
 > An extension of BalancedSoftmax while improvement is quite limited. But it can handle unknown distributions of testing datasets.
@@ -202,16 +200,11 @@ Papers related to long-tailed tasks
 
 (BBN) [Bilateral-Branch Network with Cumulative Learning for Long-Tailed Visual Recognition](https://arxiv.org/pdf/1912.02413.pdf) (CVPR 2020) [Code](https://github.com/Megvii-Nanjing/BBN) 
 
-[Deep Representation Learning on Long-tailed Data: A Learnable Embedding Augmentation Perspective](https://arxiv.org/pdf/2002.10826.pdf) CVPR 2020
+[Deep Representation Learning on Long-tailed Data: A Learnable Embedding Augmentation Perspective](https://arxiv.org/pdf/2002.10826.pdf) (CVPR 2020)
 
-[Feature Transfer Learning for Deep Face Recognition with Under-Represented Data](https://arxiv.org/pdf/1803.09014.pdf) CVPR 2019
+[Feature Transfer Learning for Deep Face Recognition with Under-Represented Data](https://arxiv.org/pdf/1803.09014.pdf) (CVPR 2019)
 
-[Memory-based Jitter: Improving Visual Recognition on Long-tailed Data with Diversity In Memory](https://arxiv.org/pdf/2008.09809.pdf) preprint
-
-[FASA: Feature Augmentation and Sampling Adaptation for Long-Tailed Instance Segmentation](https://arxiv.org/pdf/2102.12867.pdf)  (ICCV 2021) [Code](https://github.com/yuhangzang/FASA)   
-
-> 1. Augmentation is performed in the feature space.
-> 2. For a class to be augmentated, we can compute its mean features from current batch data and then update it in a momentum way. So we can generate virtual features by firstly randomly sampling variation from a gaussian prior and add the variation to the mean feature.
+[Memory-based Jitter: Improving Visual Recognition on Long-tailed Data with Diversity In Memory](https://arxiv.org/pdf/2008.09809.pdf) (preprint)
 
 (BKD) [Balanced Knowledge Distillation for Long-tailed Learning](https://arxiv.org/pdf/2104.10510.pdf) preprint [Code](https://github.com/EricZsy/BalancedKnowledgeDistillation) 
 
@@ -253,26 +246,37 @@ Papers related to long-tailed tasks
 
 (TADE) [Test-Agnostic Long-Tailed Recognition by Test-Time Aggregating Diverse Experts with Self-Supervision](https://arxiv.org/pdf/2107.09249.pdf) (preprint) [Code](https://github.com/Vanint/TADE-AgnosticLT) 
 
-> Based on RIDE.
+> Based on RIDE. 
 
 
 
 # New Task Settings
 
-Results on LVIS-v1.0 and ResNet50-FPN is the backbone.
-
 |        Method        | AP_b  | AP_f  | AP_c  | AP_r  |  AP   |
 | :------------------: | :---: | :---: | :---: | :---: | :---: |
+|  SoftmaxCE(Uniform)  |   -   | 29.3  | 17.4  |  1.2  | 19.3  |
+|    SoftmaxCE(RFS)    |   -   | 28.3  | 21.6  | 12.9  | 22.8  |
 | MosaicOS (ICCV 2021) | 25.05 | 28.83 | 22.99 | 18.17 | 24.45 |
 |  EQL v2 (CVPR 2021)  | 26.1  | 30.2  | 24.3  | 17.7  | 25.5  |
 |   ACSL (CVPR 2021)   |   -   | 29.37 | 26.41 | 18.64 | 26.36 |
 |  Seesaw (CVPR 2021)  | 27.4  | 29.8  | 26.1  | 19.6  | 26.4  |
 |   LOCE (ICCV 2021)   | 27.4  | 30.7  | 26.2  | 18.5  | 26.6  |
 |  NORCAL (NIPS 2021)  | 27.77 | 29.10 | 25.82 | 23.86 | 26.76 |
+|   FASA (ICCV 2021)   |   -   | 30.1  | 27.5  | 21.0  | 27.5  |
+
+> - Results on LVIS-v1.0.
+> - ResNet50-FPN is the backbone. 
+> - The evaluation metric is AP across IoU threshold from 0.5 to 0.95 over all categories. [Link](https://arxiv.org/pdf/2003.05176.pdf) 
+> - AP_b denotes the detection performance while AP denotes the segmentation results.
 
 (NORCAL) [On Model Calibration for Long-Tailed Object Detection and Instance Segmentation](https://arxiv.org/pdf/2107.02170.pdf) (NIPS 2021) [Code](https://github.com/tydpan/NorCal) 
 
 > Post-processing of logits. Except the background logit, a temperature-like hyperparameter is used to scale down the logits, which is based on the class frequence. I also applied this post-processing techinique on Long-tailed classification and only effective in CIFAR10-LT and CIFAR100-LT but not in large scale dataset like ImageNet-LT.
+
+(FASA) [FASA: Feature Augmentation and Sampling Adaptation for Long-Tailed Instance Segmentation](https://arxiv.org/pdf/2102.12867.pdf)  (ICCV 2021) [Code](https://github.com/yuhangzang/FASA)   
+
+> 1. Augmentation is performed in the feature space.
+> 2. For a class to be augmentated, we can compute its mean features from current batch data and then update it in a momentum way. So we can generate virtual features by firstly randomly sampling variation from a gaussian prior and add the variation to the mean feature.
 
 (LOCE) [Exploring Classification Equilibrium in Long-Tailed Object Detection](https://arxiv.org/pdf/2108.07507.pdf) (ICCV 2021) [Code](https://github.com/fcjian/LOCE) 
 
@@ -300,6 +304,8 @@ Results on LVIS-v1.0 and ResNet50-FPN is the backbone.
 
 [DropLoss for Long-Tail Instance Segmentation](https://arxiv.org/pdf/2104.06402.pdf) (AAAI 2021) [Code](https://github.com/timy90022/DropLoss) 
 
+> Unlike EQL, the proposed solution tries to remove the supression from background classes.
+
 [Image-Level or Object-Level? A Tale of Two Resampling Strategies for Long-Tailed Detection](https://arxiv.org/pdf/2104.05702.pdf) (ICML 2021) [Code](https://github.com/NVlabs/RIO) 
 
 > Bi-level sampling. Repeat factor sampling (RFS) is used for image-level sampling. As for the object-level sampling, they propose a memory bank to store (feat, bbx) of tail classes so that more tail objects can be sampled during each batch.
@@ -310,7 +316,11 @@ Results on LVIS-v1.0 and ResNet50-FPN is the backbone.
 
 [Equalization Loss for Long-Tailed Object Recognition](https://arxiv.org/pdf/2003.05176.pdf) (CVPR 2020) [Code](https://github.com/tztztztztz/eql.detectron2) 
 
+> Ignore all gradients from head classes when updating tail classifiers.
+
 [Overcoming Classifier Imbalance for Long-tail Object Detection with Balanced Group Softmax](https://arxiv.org/pdf/2006.10408.pdf) (CVPR 2020) [Code](https://github.com/FishYuLi/BalancedGroupSoftmax) 
+
+> Categories with similar numbers of training instances into the same group and computes group-wise softmax crossentropy loss respectively.
 
 [Imbalanced Continual Learning with Partitioning Reservoir Sampling](https://arxiv.org/pdf/2009.03632.pdf) (ECCV 2020) [Code](https://github.com/cdjkim/PRS) 
 
