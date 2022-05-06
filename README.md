@@ -132,6 +132,8 @@ Papers related to long-tailed tasks
 
 ## Re-weighting
 
+[Long-Tailed Recognition via Weight Balancing](https://arxiv.org/pdf/2203.14197.pdf) (CVPR 2022) [Code](https://github.com/ShadeAlsha/LTR-weight-balancing)
+
 [Influence-Balanced Loss for Imbalanced Visual Classification](https://openaccess.thecvf.com/content/ICCV2021/papers/Park_Influence-Balanced_Loss_for_Imbalanced_Visual_Classification_ICCV_2021_paper.pdf) (ICCV 2021) [Code](https://github.com/pseulki/IB-Loss) 
 
 (LADE) [Disentangling Label Distribution for Long-tailed Visual Recognition](https://arxiv.org/pdf/2012.00321.pdf) (CVPR 2021) [Code](https://github.com/hyperconnect/LADE) 
@@ -143,6 +145,8 @@ Papers related to long-tailed tasks
 (BLMS) [Balanced Meta-Softmax for Long-Tailed Visual Recognition](https://papers.nips.cc/paper/2020/file/2ba61cc3a8f44143e1f2f13b2b729ab3-Paper.pdf) (NIPS 2020) [code](https://github.com/jiawei-ren/BalancedMetaSoftmax-Classification) 
 
 ## Sampling
+
+[The Majority Can Help The Minority: Context-rich Minority Oversampling for Long-tailed Classification]() (CVPR 2022)
 
 [Solving Long-tailed Recognition with Deep Realistic Taxonomic Classifier](https://arxiv.org/pdf/2007.09898.pdf) (ECCV 2020) [Code](https://github.com/gina9726/Deep-RTC) 
 
@@ -161,6 +165,12 @@ Papers related to long-tailed tasks
 
 
 ## Feature Manipulation
+
+[Retrieval Augmented Classification for Long-Tail Visual Recognition](https://arxiv.org/pdf/2202.11233.pdf) (CVPR 2022)
+
+[Long-tail Recognition via Compositional Knowledge Transfer](https://arxiv.org/pdf/2112.06741.pdf) (CVPR 2022)
+
+[Targeted Supervised Contrastive Learning for Long-Tailed Recognition]() (CVPR 2022)
 
 [Self-supervised Learning is More Robust to Dataset Imbalance](https://openreview.net/forum?id=4AZz9osqrar) (ICLR 2022)
 
@@ -210,6 +220,10 @@ Papers related to long-tailed tasks
 
 ### Logit Adjustment
 
+[Long-Tailed Recognition via Weight Balancing](file:///Users/daniel/Desktop/Long-Tailed%20Recognition%20via%20Weight%20Balancing.pdf) (CVPR 2022) [Code](https://github.com/ShadeAlsha/LTR-weight-balancing)
+
+[Long-tailed Visual Recognition via Gaussian Clouded Logit Adjustment]() (CVPR 2022)
+
 [Optimal Transport for Long-Tailed Recognition with Learnable Cost Matrix](https://openreview.net/forum?id=t98k9ePQQpn) (ICLR 2022)
 
 [Towards Calibrated Model for Long-Tailed Visual Recognition from Prior Perspective](https://openreview.net/pdf?id=vqzAfN-BoA_) (NIPS2021) [Code](https://github.com/XuZhengzhuo/Prior-LT) 
@@ -229,6 +243,10 @@ Papers related to long-tailed tasks
 [Long-Tail Learning via Logit Adjustment](https://arxiv.org/pdf/2007.07314.pdf) (ICLR 2021) [Code](https://github.com/google-research/google-research/tree/master/logit_adjustment) 
 
 ## Multiple Experts
+
+[Trustworthy Long-Tailed Classification](file:///Users/daniel/Desktop/Trustworthy%20Long-Tailed%20Classification.pdf) (CVPR 2022) [Code](https://github.com/lblaoke/TLC) 
+
+[Nested Collaborative Learning for Long-Tailed Visual Recognition](https://arxiv.org/pdf/2203.15359.pdf) (CVPR 2022) [Code](https://github.com/Bazinga699/NCL) 
 
 (ACE) [ACE: Ally Complementary Experts for Solving Long-Tailed Recognition in One-Shot](https://arxiv.org/pdf/2108.02385.pdf) (ICCV 2021) [Code](https://github.com/jrcai/ACE) 
 
@@ -268,6 +286,14 @@ Papers related to long-tailed tasks
 > - ResNet50-FPN is the backbone. 
 > - The evaluation metric is AP across IoU threshold from 0.5 to 0.95 over all categories. [Link](https://arxiv.org/pdf/2003.05176.pdf) 
 > - AP_b denotes the detection performance while AP denotes the segmentation results.
+
+[Equalized Focal Loss for Dense Long-Tailed Object Detection](https://arxiv.org/pdf/2201.02593.pdf) (CVPR 2022) [Code](https://github.com/ModelTC/EOD) 
+
+[Relieving Long-tailed Instance Segmentation via Pairwise Class Balance](https://arxiv.org/pdf/2201.02784.pdf) (CVPR 2022) [Code](https://github.com/megvii-research/PCB) 
+
+[Evaluating Large-Vocabulary Object Detectors: The Devil is in the Details](https://arxiv.org/pdf/2102.01066.pdf) (Preprint) [Code](https://github.com/achalddave/large-vocab-devil) 
+
+> 
 
 (NORCAL) [On Model Calibration for Long-Tailed Object Detection and Instance Segmentation](https://arxiv.org/pdf/2107.02170.pdf) (NIPS 2021) [Code](https://github.com/tydpan/NorCal) 
 
