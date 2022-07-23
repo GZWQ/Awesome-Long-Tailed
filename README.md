@@ -132,6 +132,8 @@ Papers related to long-tailed tasks
 
 ## Re-weighting
 
+[A Re-Balancing Strategy for Class-Imbalanced Classification Based on Instance Difficulty](https://openaccess.thecvf.com/content/CVPR2022/papers/Yu_A_Re-Balancing_Strategy_for_Class-Imbalanced_Classification_Based_on_Instance_Difficulty_CVPR_2022_paper.pdf) (CVPR 2022)
+
 [Long-Tailed Recognition via Weight Balancing](https://arxiv.org/pdf/2203.14197.pdf) (CVPR 2022) [Code](https://github.com/ShadeAlsha/LTR-weight-balancing)
 
 [Influence-Balanced Loss for Imbalanced Visual Classification](https://openaccess.thecvf.com/content/ICCV2021/papers/Park_Influence-Balanced_Loss_for_Imbalanced_Visual_Classification_ICCV_2021_paper.pdf) (ICCV 2021) [Code](https://github.com/pseulki/IB-Loss) 
@@ -165,6 +167,10 @@ Papers related to long-tailed tasks
 
 
 ## Feature Manipulation
+
+[VL-LTR: Learning Class-wise Visual-Linguistic Representation for Long-Tailed Visual Recognition](https://arxiv.org/pdf/2111.13579.pdf) (ECCV 2022) [Code](https://github.com/ChangyaoTian/VL-LTR) 
+
+[Balanced Contrastive Learning for Long-Tailed Visual Recognition](https://openaccess.thecvf.com/content/CVPR2022/papers/Zhu_Balanced_Contrastive_Learning_for_Long-Tailed_Visual_Recognition_CVPR_2022_paper.pdf) (CVPR 2022)
 
 [Retrieval Augmented Classification for Long-Tail Visual Recognition](https://arxiv.org/pdf/2202.11233.pdf) (CVPR 2022)
 
