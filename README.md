@@ -124,6 +124,8 @@ Papers related to long-tailed tasks
 
 ## Survey
 
+[A Survey on Long-tailed Visual Recognition](https://arxiv.org/pdf/2205.13775.pdf) (IJCV 2022)
+
 [Deep Long-Tailed Learning: A Survey](https://arxiv.org/pdf/2110.04596.pdf)  
 
 [Bag of Tricks for Long-Tailed Visual Recognition with Deep Convolutional Neural Networks](http://www.lamda.nju.edu.cn/zhangys/papers/AAAI_tricks.pdf) (AAAI 2021) [Code](https://github.com/zhangyongshun/BagofTricks-LT)  
@@ -132,9 +134,13 @@ Papers related to long-tailed tasks
 
 ## Re-weighting
 
+[Cross-Domain Empirical Risk Minimization for Unbiased Long-tailed Classification](https://arxiv.org/pdf/2112.14380.pdf) (AAAI 2022) [Code](https://github.com/BeierZhu/xERM) 
+
 [A Re-Balancing Strategy for Class-Imbalanced Classification Based on Instance Difficulty](https://openaccess.thecvf.com/content/CVPR2022/papers/Yu_A_Re-Balancing_Strategy_for_Class-Imbalanced_Classification_Based_on_Instance_Difficulty_CVPR_2022_paper.pdf) (CVPR 2022)
 
 [Long-Tailed Recognition via Weight Balancing](https://arxiv.org/pdf/2203.14197.pdf) (CVPR 2022) [Code](https://github.com/ShadeAlsha/LTR-weight-balancing)
+
+[SOLVING THE LONG-TAILED PROBLEM VIA INTRA- AND INTER-CATEGORY BALANCE](https://arxiv.org/pdf/2204.09234.pdf) (ICASSP2022) 
 
 [Influence-Balanced Loss for Imbalanced Visual Classification](https://openaccess.thecvf.com/content/ICCV2021/papers/Park_Influence-Balanced_Loss_for_Imbalanced_Visual_Classification_ICCV_2021_paper.pdf) (ICCV 2021) [Code](https://github.com/pseulki/IB-Loss) 
 
@@ -146,9 +152,17 @@ Papers related to long-tailed tasks
 
 (BLMS) [Balanced Meta-Softmax for Long-Tailed Visual Recognition](https://papers.nips.cc/paper/2020/file/2ba61cc3a8f44143e1f2f13b2b729ab3-Paper.pdf) (NIPS 2020) [code](https://github.com/jiawei-ren/BalancedMetaSoftmax-Classification) 
 
+[GradTail: Learning Long-Tailed Data Using Gradient-based Sample Weighting](https://arxiv.org/pdf/2201.05938.pdf) (preprint)
+
+[Class-Aware Universum Inspired Re-Balance Learning for Long-Tailed Recognition](https://arxiv.org/pdf/2207.12808.pdf) (preprint)
+
+[Class-Difficulty Based Methods for Long-Tailed Visual Recognition](https://arxiv.org/pdf/2207.14499.pdf) (preprint)
+
+[Margin Calibration for Long-Tailed Visual Recognition](https://arxiv.org/pdf/2112.07225.pdf) (preprint)
+
 ## Sampling
 
-[The Majority Can Help The Minority: Context-rich Minority Oversampling for Long-tailed Classification]() (CVPR 2022)
+[The Majority Can Help The Minority: Context-rich Minority Oversampling for Long-tailed Classification]() (CVPR 2022) [Code](https://github.com/naver-ai/cmo) 
 
 [Solving Long-tailed Recognition with Deep Realistic Taxonomic Classifier](https://arxiv.org/pdf/2007.09898.pdf) (ECCV 2020) [Code](https://github.com/gina9726/Deep-RTC) 
 
@@ -158,27 +172,29 @@ Papers related to long-tailed tasks
 
 [Rethinking Class-Balanced Methods for Long-Tailed Visual Recognition from a Domain Adaptation Perspective](https://arxiv.org/pdf/2003.10780.pdf) (CVPR 2020) [code](https://github.com/abdullahjamal/Longtail_DA) 
 
-[Meta-Weight-Net: Learning an Explicit Mapping For Sample Weighting](https://arxiv.org/pdf/1902.07379.pdf) (NIPS 2019) [code](https://github.com/xjtushujun/Meta-weight-net_class-imbalance) 
-
-
-
-
+[Meta-Weight-Net: Learning an Explicit Mapping For Sample Weighting](https://arxiv.org/pdf/1902.07379.pdf) (NIPS 2019) [code](https://github.com/xjtushujun/Meta-weight-net_class-imbalance)  
 
 
 
 ## Feature Manipulation
 
+[Constructing Balance from Imbalance for Long-tailed Image Recognition](https://arxiv.org/pdf/2208.02567.pdf) (ECCV 2022) [Code](https://github.com/silicx/DLSA) 
+
+[Invariant Feature Learning for Generalized Long-Tailed Classification](https://arxiv.org/pdf/2207.09504.pdf) (ECCV 2022) [Code](https://github.com/KaihuaTang/Generalized-Long-Tailed-Benchmarks.pytorch) 
+
 [VL-LTR: Learning Class-wise Visual-Linguistic Representation for Long-Tailed Visual Recognition](https://arxiv.org/pdf/2111.13579.pdf) (ECCV 2022) [Code](https://github.com/ChangyaoTian/VL-LTR) 
 
-[Balanced Contrastive Learning for Long-Tailed Visual Recognition](https://openaccess.thecvf.com/content/CVPR2022/papers/Zhu_Balanced_Contrastive_Learning_for_Long-Tailed_Visual_Recognition_CVPR_2022_paper.pdf) (CVPR 2022)
+[Balanced Contrastive Learning for Long-Tailed Visual Recognition](https://openaccess.thecvf.com/content/CVPR2022/papers/Zhu_Balanced_Contrastive_Learning_for_Long-Tailed_Visual_Recognition_CVPR_2022_paper.pdf) (CVPR 2022) [Code](https://github.com/FlamieZhu/Balanced-Contrastive-Learning) 
 
 [Retrieval Augmented Classification for Long-Tail Visual Recognition](https://arxiv.org/pdf/2202.11233.pdf) (CVPR 2022)
 
 [Long-tail Recognition via Compositional Knowledge Transfer](https://arxiv.org/pdf/2112.06741.pdf) (CVPR 2022)
 
-[Targeted Supervised Contrastive Learning for Long-Tailed Recognition]() (CVPR 2022)
+[Targeted Supervised Contrastive Learning for Long-Tailed Recognition]() (CVPR 2022) [Code](https://github.com/LTH14/targeted-supcon) 
 
 [Self-supervised Learning is More Robust to Dataset Imbalance](https://openreview.net/forum?id=4AZz9osqrar) (ICLR 2022)
+
+[Imagine by Reasoning: A Reasoning-Based Implicit Semantic Data Augmentation for Long-Tailed Classification](https://arxiv.org/pdf/2112.07928.pdf) (AAAI 2022) [Code](https://github.com/xiaohua-chen/risda) 
 
 [Do deep networks transfer invariances across classes?](https://openreview.net/forum?id=Fn7i_r5rR0q) (ICLR 2022)
 
@@ -224,7 +240,17 @@ Papers related to long-tailed tasks
 
 (BKD) [Balanced Knowledge Distillation for Long-tailed Learning](https://arxiv.org/pdf/2104.10510.pdf) preprint [Code](https://github.com/EricZsy/BalancedKnowledgeDistillation) 
 
+[A Simple Long-Tailed Recognition Baseline via Vision-Language Model](https://arxiv.org/pdf/2111.14745.pdf) (preprint) [Code](https://github.com/gaopengcuhk/BALLAD) 
+
+[Feature Generation for Long-tail Classification](https://arxiv.org/pdf/2111.05956.pdf) [Code](https://github.com/rahulvigneswaran/TailCalibX) (preprint)
+
+[Long-Tailed Classification with Gradual Balanced Loss and Adaptive Feature Generation](https://arxiv.org/pdf/2203.00452.pdf) (preprint)
+
+[Rebalanced Siamese Contrastive Mining for Long-Tailed Recognition](https://arxiv.org/pdf/2203.11506.pdf) (preprint) [Code](https://github.com/dvlab-research/Imbalanced-Learning) 
+
 ### Logit Adjustment
+
+[Label-Aware Distribution Calibration for Long-tailed Classification](https://arxiv.org/pdf/2111.04901.pdf) (AAAI 2022)
 
 [Long-Tailed Recognition via Weight Balancing](file:///Users/daniel/Desktop/Long-Tailed%20Recognition%20via%20Weight%20Balancing.pdf) (CVPR 2022) [Code](https://github.com/ShadeAlsha/LTR-weight-balancing)
 
@@ -248,9 +274,11 @@ Papers related to long-tailed tasks
 
 [Long-Tail Learning via Logit Adjustment](https://arxiv.org/pdf/2007.07314.pdf) (ICLR 2021) [Code](https://github.com/google-research/google-research/tree/master/logit_adjustment) 
 
+[ELM: Embedding and Logit Margins for Long-Tail Learning](https://arxiv.org/pdf/2204.13208.pdf) (preprint) 
+
 ## Multiple Experts
 
-[Trustworthy Long-Tailed Classification](file:///Users/daniel/Desktop/Trustworthy%20Long-Tailed%20Classification.pdf) (CVPR 2022) [Code](https://github.com/lblaoke/TLC) 
+[Trustworthy Long-Tailed Classification](https://openaccess.thecvf.com/content/CVPR2022/papers/Li_Trustworthy_Long-Tailed_Classification_CVPR_2022_paper.pdf) (CVPR 2022) [Code](https://github.com/lblaoke/TLC) 
 
 [Nested Collaborative Learning for Long-Tailed Visual Recognition](https://arxiv.org/pdf/2203.15359.pdf) (CVPR 2022) [Code](https://github.com/Bazinga699/NCL) 
 
@@ -272,7 +300,9 @@ Papers related to long-tailed tasks
 
 > Based on RIDE. 
 
+[Balanced Product of Experts for Long-Tailed Recognition](https://arxiv.org/pdf/2206.05260.pdf) (preprint)
 
+[DBN-Mix: Training Dual Branch Network Using Bilateral Mixup Augmentation for Long-Tailed Visual Recognition](https://arxiv.org/pdf/2207.02173.pdf) (preprint)
 
 # New Task Settings
 
@@ -292,6 +322,8 @@ Papers related to long-tailed tasks
 > - ResNet50-FPN is the backbone. 
 > - The evaluation metric is AP across IoU threshold from 0.5 to 0.95 over all categories. [Link](https://arxiv.org/pdf/2003.05176.pdf) 
 > - AP_b denotes the detection performance while AP denotes the segmentation results.
+
+[Long-tailed Instance Segmentation using Gumbel Optimized Loss](https://arxiv.org/pdf/2207.10936.pdf) (ECCV 2022) [Code](https://github.com/kostas1515/GOL) 
 
 [Equalized Focal Loss for Dense Long-Tailed Object Detection](https://arxiv.org/pdf/2201.02593.pdf) (CVPR 2022) [Code](https://github.com/ModelTC/EOD) 
 
@@ -362,7 +394,15 @@ Papers related to long-tailed tasks
 
 [Forest R-CNN: Large-Vocabulary Long-Tailed Object Detection and Instance Segmentation](https://arxiv.org/pdf/2008.05676.pdf) (ACM MM 2020) [Code](https://github.com/JialianW/Forest_RCNN)  
 
-> 
+
+
+[Equalized Focal Loss for Dense Long-Tailed Object Detection](https://arxiv.org/pdf/2201.02593.pdf) (CVPR 2022) [Code](https://github.com/ModelTC/United-Perception) 
+
+[On Multi-Domain Long-Tailed Recognition, Imbalanced Domain Generalization and Beyond](https://arxiv.org/pdf/2203.09513.pdf) (ECCV 2022) [Code](https://github.com/YyzHarry/multi-domain-imbalance) 
+
+[Tackling Long-Tailed Category Distribution Under Domain Shifts](https://arxiv.org/pdf/2207.10150.pdf) (ECCV 2022) [Code](https://github.com/guxiao0822/lt-ds)
+
+[Identifying Hard Noise in Long-Tailed Sample Distribution](https://arxiv.org/pdf/2207.13378.pdf) (ECCV 2022) [Code](https://github.com/yxymessi/H2E-Framework) 
 
 [VideoLT: Large-scale Long-tailed Video Recognition](https://arxiv.org/pdf/2105.02668.pdf) (ICCV 2021) [Code](https://github.com/17Skye17/VideoLT) 
 
