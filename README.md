@@ -134,6 +134,8 @@ Papers related to long-tailed tasks
 
 ## Re-weighting
 
+[Class-Difficulty Based Methods for Long-Tailed Visual Recognition](https://arxiv.org/pdf/2207.14499.pdf) (IJCV 2022) 
+
 [Cross-Domain Empirical Risk Minimization for Unbiased Long-tailed Classification](https://arxiv.org/pdf/2112.14380.pdf) (AAAI 2022) [Code](https://github.com/BeierZhu/xERM) 
 
 [A Re-Balancing Strategy for Class-Imbalanced Classification Based on Instance Difficulty](https://openaccess.thecvf.com/content/CVPR2022/papers/Yu_A_Re-Balancing_Strategy_for_Class-Imbalanced_Classification_Based_on_Instance_Difficulty_CVPR_2022_paper.pdf) (CVPR 2022)
