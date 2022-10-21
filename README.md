@@ -172,6 +172,8 @@ Papers related to long-tailed tasks
 
 ## Meta Learning
 
+[Difficulty-Net: Learning to Predict Difficulty for Long-Tailed Recognition](https://arxiv.org/pdf/2209.02960.pdf) (WACV 2023) [Code](https://github.com/hitachi-rd-cv/Difficulty_Net) 
+
 (MetaSAug) [MetaSAug: Meta Semantic Augmentation for Long-Tailed Visual Recognition](https://arxiv.org/pdf/2103.12579.pdf) (CVPR 2021) [code](https://github.com/BIT-DA/MetaSAug) 
 
 [Rethinking Class-Balanced Methods for Long-Tailed Visual Recognition from a Domain Adaptation Perspective](https://arxiv.org/pdf/2003.10780.pdf) (CVPR 2020) [code](https://github.com/abdullahjamal/Longtail_DA) 
