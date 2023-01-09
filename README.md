@@ -134,6 +134,10 @@ Papers related to long-tailed tasks
 
 ## Re-weighting
 
+[Learning to Re-weight Examples with Optimal Transport for Imbalanced Classification](https://arxiv.org/pdf/2208.02951.pdf) (NIPS 2022) [Code](https://github.com/DandanGuo1993/reweight-imbalance-classification-with-OT) 
+
+[Escaping Saddle Points for Effective Generalization on Class-Imbalanced Data](https://arxiv.org/pdf/2212.13827.pdf) (NIPS 2022) [Code](https://github.com/val-iisc/Saddle-LongTail) 
+
 [Class-Difficulty Based Methods for Long-Tailed Visual Recognition](https://arxiv.org/pdf/2207.14499.pdf) (IJCV 2022) 
 
 [Cross-Domain Empirical Risk Minimization for Unbiased Long-tailed Classification](https://arxiv.org/pdf/2112.14380.pdf) (AAAI 2022) [Code](https://github.com/BeierZhu/xERM) 
@@ -183,6 +187,14 @@ Papers related to long-tailed tasks
 
 
 ## Feature Manipulation
+
+[SAFA: Sample-Adaptive Feature Augmentation for Long-Tailed Image Classification](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136840578.pdf) (ECCV 2022)
+
+[Towards Calibrated Hyper-Sphere Representation via Distribution Overlap Coefficient for Long-tailed Learning](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136840176.pdf) (ECCV 2022) [Code](https://github.com/SiLangWHL/vMF-OP) 
+
+> Developed a new classifier.
+
+[Breadcrumbs: Adversarial Class-Balanced Sampling for Long-tailed Recognition](https://arxiv.org/pdf/2105.00127.pdf) (ECCV 2022) [Code](https://github.com/BoLiu-SVCL/Breadcrumbs) 
 
 [Constructing Balance from Imbalance for Long-tailed Image Recognition](https://arxiv.org/pdf/2208.02567.pdf) (ECCV 2022) [Code](https://github.com/silicx/DLSA) 
 
@@ -284,6 +296,10 @@ Papers related to long-tailed tasks
 
 ## Multiple Experts
 
+(TADE) [Test-Agnostic Long-Tailed Recognition by Test-Time Aggregating Diverse Experts with Self-Supervision](https://arxiv.org/pdf/2107.09249.pdf) (NIPS 2022) [Code](https://github.com/Vanint/TADE-AgnosticLT) 
+
+> Based on RIDE. 
+
 [Trustworthy Long-Tailed Classification](https://openaccess.thecvf.com/content/CVPR2022/papers/Li_Trustworthy_Long-Tailed_Classification_CVPR_2022_paper.pdf) (CVPR 2022) [Code](https://github.com/lblaoke/TLC) 
 
 [Nested Collaborative Learning for Long-Tailed Visual Recognition](https://arxiv.org/pdf/2203.15359.pdf) (CVPR 2022) [Code](https://github.com/Bazinga699/NCL) 
@@ -302,9 +318,7 @@ Papers related to long-tailed tasks
 
 > Instance level re-weighting.
 
-(TADE) [Test-Agnostic Long-Tailed Recognition by Test-Time Aggregating Diverse Experts with Self-Supervision](https://arxiv.org/pdf/2107.09249.pdf) (preprint) [Code](https://github.com/Vanint/TADE-AgnosticLT) 
 
-> Based on RIDE. 
 
 [Balanced Product of Experts for Long-Tailed Recognition](https://arxiv.org/pdf/2206.05260.pdf) (preprint)
 
