@@ -188,6 +188,8 @@ Papers related to long-tailed tasks
 
 ## Feature Manipulation
 
+[Tailoring Self-Supervision for Supervised Learning](https://arxiv.org/pdf/2207.10023.pdf) (ECCV 2022) [Code](https://github.com/wjun0830/Localizable-Rotation) 
+
 [SAFA: Sample-Adaptive Feature Augmentation for Long-Tailed Image Classification](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136840578.pdf) (ECCV 2022)
 
 [Towards Calibrated Hyper-Sphere Representation via Distribution Overlap Coefficient for Long-tailed Learning](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136840176.pdf) (ECCV 2022) [Code](https://github.com/SiLangWHL/vMF-OP) 
@@ -426,7 +428,21 @@ Papers related to long-tailed tasks
 
 
 
---------
+# Long-tailed Video Recognition
+
+[Minority-Oriented Vicinity Expansion with Attentive Aggregation for Video Long-Tailed Recognition](https://arxiv.org/pdf/2211.13471.pdf) (AAAI 2023) [Code](https://github.com/wjun0830/MOVE)
+
+[VideoLT: Large-scale Long-tailed Video Recognition](https://arxiv.org/pdf/2105.02668.pdf) (ICCV 2021) [Code](https://github.com/17Skye17/VideoLT) 
+
+
+
+-------
+
+
+
+
+
+
 
 
 
@@ -437,8 +453,6 @@ Papers related to long-tailed tasks
 [Tackling Long-Tailed Category Distribution Under Domain Shifts](https://arxiv.org/pdf/2207.10150.pdf) (ECCV 2022) [Code](https://github.com/guxiao0822/lt-ds)
 
 [Identifying Hard Noise in Long-Tailed Sample Distribution](https://arxiv.org/pdf/2207.13378.pdf) (ECCV 2022) [Code](https://github.com/yxymessi/H2E-Framework) 
-
-[VideoLT: Large-scale Long-tailed Video Recognition](https://arxiv.org/pdf/2105.02668.pdf) (ICCV 2021) [Code](https://github.com/17Skye17/VideoLT) 
 
 [Adversarial Robustness under Long-Tailed Distribution](https://arxiv.org/pdf/2104.02703.pdf) (CVPR 2021) [Code](https://github.com/wutong16/Adversarial_Long-Tail) 
 
